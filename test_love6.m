@@ -1,0 +1,47 @@
+function e = test_love6()
+% test_love6 runs several tests and returns
+% the number of tests that fail
+% Author: Mehreen Asad
+% Homework#4 
+% Due date: 2/17/2011 
+
+
+  e=0;
+  
+  e = e + runtest(1,6,true);
+  e = e + runtest(2,2,true);
+  e = e + runtest(4,5,true);
+  e = e + runtest(8,2,true);
+  e = e + runtest(3,3,true);
+  e = e + runtest(4,2,true);
+  e = e + runtest(10,4,true);
+  e = e + runtest(9,9,false);
+  e = e + runtest(1,5,true);
+  e = e + runtest(3,9,true);
+  e = e + runtest(11,5,true);
+  
+end
+
+function e = runtest(a,b,answer)
+% runtest(a,b,answer) - calls love6(a,b)
+% to get the result, compares with the answer
+% and returns an error statement and
+% also prints out the correct test result
+% Prints out 1 if true and 0 if false
+% result is computed by the function defined
+% Answer is the one in the test case
+
+  result = love6(a,b);
+
+  if (result == answer)
+    e=0;
+    fprintf('      love6(%d,%d)=%d\n',a,b,result);
+  else
+    e=1;
+    fprintf('ERROR:love6(%d,%d)->%d <> %d\n', a,b,result,answer);
+  end
+end
+
+
+
+  
