@@ -4,12 +4,13 @@ function e = test_love6()
 % Author: Mehreen Asad
 % Homework#4 
 % Due date: 2/17/2011 
-
+% Modifications:
+% Tim Hickey, chaged the (2,2) case from true to false
 
   e=0;
   
   e = e + runtest(1,6,true);
-  e = e + runtest(2,2,true);
+  e = e + runtest(2,2,false); % this was originally true, but should be false
   e = e + runtest(4,5,true);
   e = e + runtest(8,2,true);
   e = e + runtest(3,3,true);
