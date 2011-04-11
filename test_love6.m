@@ -12,7 +12,7 @@ function e = test_love6()
   
   e = e + runtest(1,6,true);
   e = e + runtest(2,2,false); % this was originally true, but should be false
-  e = e + runtest(4,5,true);
+  e = e + runtest(4,5,false);
   e = e + runtest(8,2,true);
   e = e + runtest(3,3,true);
   e = e + runtest(4,2,true);
@@ -21,6 +21,8 @@ function e = test_love6()
   e = e + runtest(1,5,true);
   e = e + runtest(3,9,true);
   e = e + runtest(11,5,true);
+  e = e + runtest(-2,-8,true); % this tests negative numbers
+  e = e + runtest(4,10,true); % this tests biggest second for dif
   
 end
 
