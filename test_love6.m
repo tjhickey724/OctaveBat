@@ -25,6 +25,7 @@ function e = test_love6()
   e = e + runtest(-2,-8,true); % this tests negative numbers
   e = e + runtest(4,10,true); % this tests biggest second for dif
   e = e + runtest(5,10,false);
+  e = e + runtest(5,110,false); % changing this case ...
   e = e + runtest(50,11,true); 
   
 end
