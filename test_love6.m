@@ -1,7 +1,7 @@
 function e = test_love6()
 % test_love6 runs several tests and returns
 % love6(a,b) should be true if a or b is six or if the sum or difference is 6
-% the number of tests that fail
+% it returns the number of tests that fail
 % Author: Mehreen Asad
 % Homework#4 
 % Due date: 2/17/2011 
