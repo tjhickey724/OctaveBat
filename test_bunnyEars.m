@@ -19,7 +19,9 @@ function e=test_bunnyEars()
   e = e + runtest(10,20);
   e = e + runtest(9,18);
   e = e + runtest(11,20);
-  
+  e = e + runtest(21,20);  % added another test case(Mehreen Asad)  
+     
+
 end
 
 function e = runtest(b, answer)
