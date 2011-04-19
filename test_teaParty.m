@@ -1,25 +1,35 @@
+
+% Changes made by Mehreen Asad
+(Added 4 test cases to catch errors and added a test case with 0 as input value.
+Deleted 4 test cases with non-integer values since the problem is supposed to deal only with
+positive and negative integers
+Modified fprintf so that it shows both the correct value and the value passed in the function.
+)
+
 function err = test_teaParty()
 err = 0;
 err = err + runTestParty(9, 28, 2);
 err = err + runTestParty(6, 4, 0);
-err = err + runTestParty(10, 4.9, 0);
 err = err + runTestParty(10, 5, 2);
 err = err + runTestParty(18, 17, 1);
 err = err + runTestParty(-1, 100, 0);
-err = err + runTestParty(18, 9.1, 1);
-err = err + runTestParty(101, 50.5, 2);
 err = err + runTestParty(-10, -50, 0);
-err = err + runTestParty(7/8, 1/2, 0);
+err = err + runTestParty(40, -40, 0);
+err = err + runTestParty(0, 0, 0);
+err = err + runTestParty(0, 4, 0);
+err = err + runTestParty(1, 2, 0);
+err = err + runTestParty(0, -100, 0);
+
 end
 
 function x = runTestParty(t, c, correct)
 ansr = teaParty(t, c);
 if ansr == correct
     x=0; 
-    fprintf('teaParty(%d, %d) --> %d\n', t, c, ansr);
+fprintf('       teaParty(%d,%d) = %d\n' , t, c, ansr);
  else
    x=1; 
-   fprintf('ERROR! teaParty(%d, %d) --> %d\n', t, c, ansr);
+fprintf('ERROR! teaParty(%d, %d) --> %d <> %d\n', t, c,ansr,correct);
  end
 end
 
