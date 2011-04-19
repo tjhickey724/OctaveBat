@@ -3,6 +3,7 @@ function e=test_SleepIn()
 % the number of tests that fail
 % Author: Iain Crosby
 % Date 2/28/11
+% Mehreen Asad checked the test case and it runs fine. 
 
 e=0;
 e= e + runtest(true,true,true);
@@ -22,9 +23,9 @@ result = SleepIn(a,b);
 
 	if (result == answer)
 		e=0;
-		fprintf(' SleepIn(%d,%d)=%d\n' ,a,b,result)
+		fprintf('       SleepIn(%d,%d) = %d\n' ,a,b,result)
 	else
 		e=1;
-		fprintf('ERROR: SleepIn(%d,%d) ->%d <> %d\n' ,a,b,result,answer)
+		fprintf('ERROR: SleepIn(%d,%d) -> %d <> %d\n' ,a,b,result,answer)
 	end
 end
