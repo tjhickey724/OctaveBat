@@ -6,6 +6,7 @@
 %Modified fprintf so that it shows both the correct value and the value passed in the function)
 
 function err = test_teaParty()
+
 err = 0;
 err = err + runTestParty(9, 28, 2);
 err = err + runTestParty(6, 4, 0);
