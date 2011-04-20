@@ -11,13 +11,15 @@ function e=test_sumDouble()
   e = e + runtest(1,3,4);
   e = e + runtest(2,2,8);
   e = e + runtest(4,5,9);
-  e = e + runtest(2,2,4);
+  e = e + runtest(4,4,16);
   e = e + runtest(3,2,5);
-  e = e + runtest(4,2,7);
+  e = e + runtest(4,2,6);
   e = e + runtest(10,11,21);
   e = e + runtest(9,9,36);
   e = e + runtest(1,5,6);
   e = e + runtest(3,0,3);
+e = e + runtest(-3,-3,-12 );
+
   
 end
 
