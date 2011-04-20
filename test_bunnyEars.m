@@ -4,22 +4,22 @@ function e=test_bunnyEars()
 % Author: Mehreen Asad
 % Homework#4 
 % Due date: 2/17/2011 
-
+  
 
   e = 0;
   
   e = e + runtest(1,2);
   e = e + runtest(2,4);
-  e = e + runtest(2,3);
+  e = e + runtest(2,4);
   e = e + runtest(5,10);
   e = e + runtest(4,8);
-  e = e + runtest(6,10);
-  e = e + runtest(5,9);
+  e = e + runtest(6,12);
+  e = e + runtest(5,10);
   e = e + runtest(20,40);
   e = e + runtest(10,20);
   e = e + runtest(9,18);
-  e = e + runtest(11,20);
-  e = e + runtest(21,20);  % added another test case(Mehreen Asad)  
+  e = e + runtest(11,22);
+  e = e + runtest(21,42);    
      
 
 end
