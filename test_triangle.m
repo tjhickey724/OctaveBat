@@ -2,6 +2,8 @@ function e=test_triangle()
 %runs unit tests on triangle(n) and returns if the cases fail or pass
 %author-Robin Jha
 %date-02/21/2011
+%Mehreen Asad (Added 2 Test cases)
+
 e=0;
 e+= runTest(5,15);
 e+= runTest(1,1);
@@ -13,6 +15,9 @@ e+= runTest(8,36);
 e+= runTest(2,3);
 e+= runTest(3,6);
 e+= runTest(9,45);
+e+= runTest(10,55);
+e+= runTest(12,78);
+
 end
 
 function k = runTest(n,answer)
