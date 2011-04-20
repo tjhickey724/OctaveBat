@@ -6,6 +6,7 @@ function y = test_hasTeen();
 % and returns the number of tests that fail.
 % Author: Gabriel Bronk
 % 3/2/11
+%Mehreen Asad (Added 2 new test cases)
 
 y = 0;
 y = y + runtest(12,20,13,true);
@@ -18,6 +19,9 @@ y = y + runtest(90,12,20,false);
 y = y + runtest(14,15,16,true);
 y = y + runtest(12,12,12,false);
 y = y + runtest(13,13,13,true);
+y = y + runtest(-2,0,4,false);
+y = y + runtest(12,16,1,true);                                                 
+                                                                                                       
 end
 
 
