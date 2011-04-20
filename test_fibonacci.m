@@ -5,6 +5,8 @@ function e= test_fibonacci()
 % author: Varenya Prasad
 % date: 2nd March 2011
 
+% Mehreen Asad (Added a new test case)
+
 e=0;
 e+= runTest(0,0);
 e+= runTest(1,1);
@@ -16,6 +18,8 @@ e+= runTest(6,8);
 e+= runTest(7,13);
 e+= runTest(8,21);
 e+= runTest(9,34);
+e+= runTest(10,55);
+
 end
 
 function k = runTest(a,answer)
