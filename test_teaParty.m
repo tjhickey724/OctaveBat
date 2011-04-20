@@ -1,6 +1,6 @@
 
 % Changes made by Mehreen Asad
-%(Added 4 test cases to catch errors and added a test case with 0 as input value.
+%(Added 5 test cases to catch errors and added a test case with 0 as input value.
 %Deleted 4 test cases with non-integer values since the problem is supposed to deal only with
 %positive and negative integers.
 %Modified fprintf so that it shows both the correct value and the value passed in the function)
@@ -18,6 +18,7 @@ err = err + runTestParty(0, 0, 0);
 err = err + runTestParty(0, 4, 0);
 err = err + runTestParty(1, 2, 0);
 err = err + runTestParty(0, -100, 0);
+err = err + runTestParty(11, 4, 0);
 
 end
 

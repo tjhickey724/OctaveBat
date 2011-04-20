@@ -2,7 +2,7 @@ function test_makeChocolate()
 % test_makeChocolate() runs 12 tests on the function makeChocolate to check reliability
 % function returns total number of failures.
 % Taha Bakhtiyar 2/2011
-% Mehreen Asad (Added 3 test cases to see if the test code works correctly)
+
   e = 0;
   e = e + runtest(0,0,0,0);
   e = e + runtest(1,1,1,1);
@@ -15,12 +15,7 @@ function test_makeChocolate()
   e = e + runtest(1,1,2,-1);
   e = e + runtest(7,13,21,1);
   e = e + runtest(7,3,21,6);
-  e = e + runtest(7,2,21,-1);
-  e = e + runtest(2,10,14,2);
-  e = e + runtest(0,1,0,-1);
-  e = e + runtest(8,7,20,5);
-
-
+ 
 
   printf ('Failures: %d\n',e)
 end
