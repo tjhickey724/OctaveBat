@@ -13,19 +13,18 @@ function e=test_lastDigit()
   e = e + runtest(1000,1001,true);
   e = e + runtest(111,22,false);
   e = e + runtest(23,3,true);
-e = e + runtest(11,0,true);
-e = e + runtest(76,76,true);
-e = e + runtest(1000,0,true);
-e = e + runtest(5,34,true);
+  e = e + runtest(11,0,true);
+  e = e + runtest(76,76,true);
+  e = e + runtest(1000,0,true);
+  e = e + runtest(5,34,true);
 
-  
 end
 
   function e = runtest(a,b,answer)
 %This function compares predetermined test points to the results of lastDigit for those given points. 
 % The function calls lastDigit(a,b) which returns true if the rightmost digits of two integers
 % are the same and returns false if the rightmost digits of two integers are not the same 
-%Returns 1 if false and 0 if true
+% Prints 1 if true and 0 if false
 
   result = lastDigit(a,b);
 
