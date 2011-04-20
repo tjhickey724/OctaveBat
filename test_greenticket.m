@@ -1,7 +1,7 @@
 function e  = test_greenticket()
 %tests greenticket and determines the number of outcomes that fail
 
-%Mehreen Asad(Made changes as shown in front of each test case, Added frpintf 
+%Mehreen Asad(Made changes as shown in front of each test case, Added fprintf 
 %statements which were not there originally, Added a new test case)
 
 
