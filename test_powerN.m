@@ -4,7 +4,7 @@
 
 % This is the test bed for the function powerN
 % sample cases are used for testing the correctness of the function
-
+% Mehreen Asad (Added 2 new test cases)
 
 function e=test_powerN()
 
@@ -20,7 +20,8 @@ e=e+runtest(8,3,512);
 e=e+runtest(6,3,216);
 e=e+runtest(2,5,32);
 e=e+runtest(11,2,121);
-
+e=e+runtest(25,4,390625);
+e=e+runtest(4,9,262144);
 
 end
 
