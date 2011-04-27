@@ -4,6 +4,9 @@ function test_sortaSum()
 
 % Gabe Guerra Feb. 2011.
 
+%modified by Sean Kilachand
+% Corrected syntax
+% Added 2 test cases
 e = 0;
 e = e + runtest(3,4,7);
 e = e + runtest(9,4,20);
@@ -15,6 +18,8 @@ e = e + runtest(4,6,20);
 e = e + runtest(14,7,21);
 e = e + runtest(14,6,20);
 e = e + runtest(14,5,20);
+e = e + runtest(-10,10,0);
+e = e + runtest(15.5, 2.8, 20);
 
 fprintf('Failures: %d\n', e);
 end
@@ -31,4 +36,5 @@ else
 	e = 1;
 	fprintf('Error: sortaSum(%d, %d) != %d\n\n', a, b, ans);
 
+end
 end
