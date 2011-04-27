@@ -1,6 +1,8 @@
 % Stuart Davis
 % HW4
 
+% Tested by Josh Silverman
+
 function e = test_maxSpan()
 	% maxSpan(int[] n) Consider the leftmost and righmost appearances of some
 	% value in an array. We'll say that the "span" is the number of elements 
@@ -16,6 +18,10 @@ function e = test_maxSpan()
 	e = e + runTest([0,1,0,1], 3);
 	e = e + runTest([0,1,2,1,3,2,4,0], 8);
 	e = e + runTest([0,1,0,2,3,3,2], 4);
+	e = e + runTest([], 0);
+	e = e + runTest([0 1 2 3 4 5 6 7 8 9 10], 1);
+	e = e + runTest([0 1 2 3 4 5 6 7 8 9 1 9 9 9 9 9 9 9 9 9 9 9 9 0], 24);
+	e = e + runTest([0 1 2 3 4 5 6 7 8 9 1 9 9 9 9 9 9 9 9 9 9 9 9 0 1], 24);
 	
 	function k = runTest(array,answer)
 		% runTest(array,answer) - checks that maxSpan(array) == answer
