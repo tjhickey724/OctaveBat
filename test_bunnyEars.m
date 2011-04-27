@@ -5,6 +5,8 @@ function e=test_bunnyEars()
 % Homework#4 
 % Due date: 2/17/2011 
   
+% Modified by Sean Kilachand
+% Added test case
 
   e = 0;
   
@@ -20,8 +22,8 @@ function e=test_bunnyEars()
   e = e + runtest(9,18);
   e = e + runtest(11,22);
   e = e + runtest(21,42);    
-     
-
+  e = e + runtest(10.5, 21);
+  
 end
 
 function e = runtest(b, answer)
@@ -32,6 +34,12 @@ function e = runtest(b, answer)
 % result is computed by the function defined
 % Answer is the one in the test case
 
+
+  if mod(b,2) ~= 0 && mod(b,2) ~= 1
+      e = 1;
+      fprintf('ERROR: Must have a whole number of bunnies\n')
+  else
+
   result = bunnyEars(b);
 
   if (result == answer)
@@ -40,6 +48,7 @@ function e = runtest(b, answer)
   else
     e=1;
     fprintf('ERROR:bunnyEars(%d)->%d <> %d\n', b,result,answer);
+  end
   end
 end
 
