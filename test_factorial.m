@@ -3,7 +3,9 @@ function e=test_factorial()
 %author-Robin Jha
 %date-02/21/2011
 
-%Mehreen Asad (Added a new test case)
+%Tested by:
+%1. Mehreen Asad (Added a new test case)
+%2. Josh Silverman (adde negative test cases)
 
 e=0;
 e+= runTest(5,120);
@@ -17,6 +19,11 @@ e+= runTest(9,362880);
 e+= runTest(3,6);
 e+= runTest(7,5040);
 e+= runTest(11,39916800);
+
+e+= runTest(-5,-120);
+e+= runTest(-1,-1);
+e+= runTest(-0,1);
+e+= runTest(-4,-24);
 
 end
 

@@ -5,7 +5,10 @@ function e= test_fibonacci()
 % author: Varenya Prasad
 % date: 2nd March 2011
 
-% Mehreen Asad (Added a new test case)
+% Tested by: 
+% 1. Mehreen Asad (Added a new test case)
+% 2. Josh Silverman (Good test coverage)
+
 
 e=0;
 e+= runTest(0,0);
@@ -19,8 +22,6 @@ e+= runTest(7,13);
 e+= runTest(8,21);
 e+= runTest(9,34);
 e+= runTest(10,55);
-
-end
 
 function k = runTest(a,answer)
 % runTest(n,answer) - checks that fibonacci(n)==answer
