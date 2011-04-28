@@ -7,7 +7,7 @@ function e=test_bunnyEars()
   
 % Modified by Sean Kilachand
 % Added test case
-
+% Modified by Antonio Cancio on 04/28/2011 added test case
   e = 0;
   
   e = e + runtest(1,2);
@@ -23,6 +23,7 @@ function e=test_bunnyEars()
   e = e + runtest(11,22);
   e = e + runtest(21,42);    
   e = e + runtest(10.5, 21);
+  e = e + runtest(0, 0);
   
 end
 
