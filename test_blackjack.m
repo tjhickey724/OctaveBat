@@ -4,6 +4,7 @@ function e = test_blackjack()
 % fail.
 %
 % Adam Rosenbloom on 3-1-2011
+% Antonio Cancio on 4/28/2011 added a test case (21,21,21)
 
 e = 0;
 e = e + runtest(19, 21, 21);
@@ -16,6 +17,8 @@ e = e + runtest(23, 17, 17);
 e = e + runtest(18, 22, 18);
 e = e + runtest(22, 22, 0);
 e = e + runtest(11, 11, 11);
+e = e + runtest(21, 21, 21);
+
 
 if e == 0
     fprintf('Tests succesful!')
