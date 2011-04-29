@@ -2,6 +2,9 @@ function e = test_array11()
 %test_array11() runs several tests and returns number of test that fails.
 % Author: Ritu Pradhan
 %Date : 03/01/2011
+
+%Modified By Ritu Pradhan
+%Added negative testcases 
 	e = 0;
 	e+=runtest([11,5,1,55,11],2);
 	e+=runtest([11,5,55,11],2);
@@ -13,7 +16,10 @@ function e = test_array11()
 	e+=runtest([11],1);
 	e+=runtest([11,3,11,11],3);
 	e+=runtest([0],0);
-	e+=runtest([],0);
+	
+	e+=runtest([-56,58,1],0);
+	e+=runtest([-11,58,1],0);
+	e+=runtest([-11,11,1],1);
 end
 
 function e = runtest(array,answer)
