@@ -4,7 +4,11 @@
 
 % This is the test bed for the function powerN
 % sample cases are used for testing the correctness of the function
+
+% Tested by:
 % Mehreen Asad (Added 2 new test cases)
+% Josh Silverman (good coverage)
+
 
 function e=test_powerN()
 
