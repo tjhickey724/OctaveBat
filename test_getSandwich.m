@@ -1,4 +1,6 @@
 function err = test_getSandwich()
+%Modified By Ritu Pradhan
+%Added 3 testcases 
 err = 0;
 err = err + runTestSandwich('breadjellybread', 'jelly');
 err = err + runTestSandwich('xxbreadjellybreadjellyxxbread', 'jellybreadjellyxx');
@@ -10,6 +12,12 @@ err = err + runTestSandwich('turkeybreadham', '');
 err = err + runTestSandwich('breadporkxbrxreadxbredbradbread', 'porkxbrxreadxbredbrad');
 err = err + runTestSandwich('bread', '');
 err = err + runTestSandwich('breadbread', '');
+
+
+err = err + runTestSandwich('abc', '');
+err = err + runTestSandwich('xyzbreadbreadbreadxyz', 'bread');
+err = err + runTestSandwich('bread1234bread', '');
+
 end
 
 function x = runTestSandwich(s, correct)
