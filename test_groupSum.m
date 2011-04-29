@@ -1,6 +1,9 @@
 function e = test_groupSum()
 #Jeremy Patton
 
+# Tested by:
+# Josh Silverman (add negative test cases, otherwise good coverage)
+
 e=0;
 e+=runTest(1, [2, 4, 8], 10, 1);
 e+=runTest(1, [2, 4, 8], 14, 1);    
@@ -15,6 +18,8 @@ e+=runTest(1, [], 0, 1);
 e+=runTest(1, [10, 2, 2, 5], 17, 1);
 e+=runTest(1, [10, 2, 2, 5], 15, 1); 
 e+=runTest(1, [10, 2, 2, 5], 9, 1);
+e+=runTest(1, [10, -1], 9, 1);
+e+=runTest(1, [10, -5,], 9, 0);
 
 end
 
