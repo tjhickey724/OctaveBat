@@ -6,6 +6,7 @@ function e=test_factorial()
 %Tested by:
 %1. Mehreen Asad (Added a new test case)
 %2. Josh Silverman (adde negative test cases)
+%3. Antonio Cancio (Added a new test case)
 
 e=0;
 e+= runTest(5,120);
@@ -24,6 +25,7 @@ e+= runTest(-5,-120);
 e+= runTest(-1,-1);
 e+= runTest(-0,1);
 e+= runTest(-4,-24);
+e+= runTest(-7,-11);
 
 end
 
