@@ -3,8 +3,10 @@ function e = test_array11()
 % Author: Ritu Pradhan
 %Date : 03/01/2011
 
-%Modified By Ritu Pradhan
-%Added negative testcases 
+% Modified by: 
+% 1. Ritu Pradhan Added negative testcases
+% 2. Antonio Cancio Added an additional case
+
 	e = 0;
 	e+=runtest([11,5,1,55,11],2);
 	e+=runtest([11,5,55,11],2);
@@ -20,6 +22,7 @@ function e = test_array11()
 	e+=runtest([-56,58,1],0);
 	e+=runtest([-11,58,1],0);
 	e+=runtest([-11,11,1],1);
+	e+=runtest([1, 11, 1],1);
 end
 
 function e = runtest(array,answer)
