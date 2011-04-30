@@ -22,7 +22,7 @@ e+= runTest(7,13);
 e+= runTest(8,21);
 e+= runTest(9,34);
 e+= runTest(10,55);
-e+= runTest(11,60);
+e+= runTest(11,1);
 
 function k = runTest(a,answer)
 % runTest(n,answer) - checks that fibonacci(n)==answer
