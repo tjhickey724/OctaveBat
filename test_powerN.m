@@ -8,6 +8,7 @@
 % Tested by:
 % Mehreen Asad (Added 2 new test cases)
 % Josh Silverman (good coverage)
+% Antonio Cancio (Added a new test case)
 
 
 function e=test_powerN()
@@ -26,6 +27,7 @@ e=e+runtest(2,5,32);
 e=e+runtest(11,2,121);
 e=e+runtest(25,4,390625);
 e=e+runtest(4,9,262144);
+e=e+runtest(0,2,0);
 
 end
 
