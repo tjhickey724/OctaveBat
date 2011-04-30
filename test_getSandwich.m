@@ -16,7 +16,7 @@ err = err + runTestSandwich('breadbread', '');
 
 err = err + runTestSandwich('abc', '');
 err = err + runTestSandwich('xyzbreadbreadbreadxyz', 'bread');
-err = err + runTestSandwich('bread1234bread', '');
+err = err + runTestSandwich('bread1234bread', '1234');
 
 end
 
