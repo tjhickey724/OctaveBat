@@ -20,12 +20,12 @@ e+= runTest(9,362880);
 e+= runTest(3,6);
 e+= runTest(7,5040);
 e+= runTest(11,39916800);
+e+= runTest(20,2432902008176640000);
 
 e+= runTest(-5,-120);
 e+= runTest(-1,-1);
 e+= runTest(-0,1);
 e+= runTest(-4,-24);
-e+= runTest(-7,-11);
 
 end
 
