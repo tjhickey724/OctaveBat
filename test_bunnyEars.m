@@ -5,11 +5,14 @@ function e=test_bunnyEars()
 % Homework#4 
 % Due date: 2/17/2011 
   
-% Modified by Sean Kilachand
-% Added test case
+% Modified by Sean Kilachand Added test case
 % Modified by Antonio Cancio on 04/28/2011 added test case
+% Modified by Josh Silverman on 04/29/2011 good coverage. 
+	% one question: why is the arg type check in the test? 
+	% shouldn't it be in the function? Seems like the test
+	% is testing the test in this case, not the function.
   e = 0;
-  
+ 
   e = e + runtest(1,2);
   e = e + runtest(2,4);
   e = e + runtest(2,4);
