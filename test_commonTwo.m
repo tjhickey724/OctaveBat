@@ -5,7 +5,8 @@
 % This is the test bed for the function commonTwo
 % sample cases are used for testing the correctness of the function
 
-
+%Modified By Ritu Pradhan
+%Added null boundary test and 2 other testcases
 function e=test_commonTwo()
 
 e=0;
@@ -20,6 +21,10 @@ e=e+runtest(['b','b','b','b','c'],['a','b','b','b','c'],2);
 e=e+runtest(['a','b','c','c','d'],['a','b','b','c','d','d'],4);
 e=e+runtest(['a','a','b','b','c'],['b','b','b'],1);
 e=e+runtest(['a','a','b','b','c'],['c','c'],1);
+
+e=e+runtest([''],[''],0);
+e=e+runtest(['a'],['a','b'],1);
+e=e+runtest(['a'],['b'],0);
 
 
 end
