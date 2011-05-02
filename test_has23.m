@@ -5,6 +5,7 @@ function e=test_has23()
 
 % Tested by:
 % Josh Silverman (expected input is int array)
+% Antonio Cancio (Added test case)
 
   e=0;
   e = e + runtest([0,0],false);
@@ -14,7 +15,7 @@ function e=test_has23()
   e = e + runtest([4,53],false);
   e = e + runtest([0,2],true);
   e = e + runtest([0,3],true);
-  
+  e = e + runtest([-2,-3],false);
 end
 
 function e=runtest(intArray,answer)

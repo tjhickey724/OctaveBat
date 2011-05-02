@@ -2,6 +2,7 @@
 % HW4
 
 % Tested by Josh Silverman
+% Tested by Antonio Cancio and added test case
 
 function e = test_maxSpan()
 	% maxSpan(int[] n) Consider the leftmost and righmost appearances of some
@@ -22,6 +23,7 @@ function e = test_maxSpan()
 	e = e + runTest([0 1 2 3 4 5 6 7 8 9 10], 1);
 	e = e + runTest([0 1 2 3 4 5 6 7 8 9 1 9 9 9 9 9 9 9 9 9 9 9 9 0], 24);
 	e = e + runTest([0 1 2 3 4 5 6 7 8 9 1 9 9 9 9 9 9 9 9 9 9 9 9 0 1], 24);
+	e = e + runTest([0 0 0 0 0 1 0 0 1], 9);
 	
 	function k = runTest(array,answer)
 		% runTest(array,answer) - checks that maxSpan(array) == answer
