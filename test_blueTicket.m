@@ -9,7 +9,7 @@ err = err + runTestTicket(10, 0, 1, 10);
 err = err + runTestTicket(11, 0, 1, 5);
 err = err + runTestTicket(1.25, 8.75, 20, 10);
 err = err + runTestTicket(-10, -10, 0, 0);
-err = err + runTestTicket(-10, 0, 0, 0);
+err = err + runTestTicket(-10, 0, 1, 0); %changed this case to test git
 end
 
 function x = runTestTicket(d, e, f, correct)
