@@ -1,6 +1,6 @@
 function test_biggerTwo()
 
-% runs 10 tests on biggerTwo, and returns the number of wrong responses
+% runs 11 tests on biggerTwo, and returns the number of wrong responses
 
 % Gabe Guerra Feb. 2011.
 
