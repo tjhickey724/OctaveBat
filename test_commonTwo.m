@@ -25,8 +25,6 @@ e=e+runtest(['a','a','b','b','c'],['c','c'],1);
 e=e+runtest([''],[''],0);
 e=e+runtest(['a'],['a','b'],1);
 e=e+runtest(['a'],['b'],0);
-
-
 end
 
 
