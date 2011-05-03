@@ -12,6 +12,8 @@ function test_cigarParty()
 % Tested by Adam Rosenbloom on 5-2-2011
 % Everything ran smoothly, added two test cases.
 
+% Varenya Prasad - added negative number check and upper bound check for weekdays.
+
 	e = 0;
 	e = e + runtest(50,false,true);
 	e = e + runtest(30,false,false);
@@ -31,6 +33,9 @@ function test_cigarParty()
 
     e = e + runtest(200000,false,false); % Test runs fine, added this case icrosby
     e = e + runtest(200000,true,true); % and this one icrosby 
+	
+	e = e + runtest(-10, true, false); % negative number test 
+	e = e + runtest(60, false, true); % bounds check
 
     fprintf('\nErrors: %d\n\n', e);
 end
