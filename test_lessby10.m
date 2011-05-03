@@ -1,5 +1,6 @@
 function [ e ] = test_lessby10()
 %tests greenticket and determines the number of outcomes that fail
+% Iain Crosby fixed one mistake and added one case
 e=0;
 e=e+runtest(5,5,5,0);
 e=e+runtest(4,5,14,1);
