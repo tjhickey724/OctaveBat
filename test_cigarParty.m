@@ -7,6 +7,7 @@ function test_cigarParty()
 % Changed syntax so file would runn properly
 % Added a statement to output the number of errors
 % Added 2 tests
+% Modified by Iain Crosby, added two cases
 
 % Tested by Adam Rosenbloom on 5-2-2011
 % Everything ran smoothly, added two test cases.
