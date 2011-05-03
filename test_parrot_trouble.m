@@ -8,7 +8,7 @@ function e = test_parrot_trouble()
 % example given on CodingBat parrotTrouble(false, 6) = false. I fixed all
 % the cases so that they have the correct expected output! This was a
 % fundamental mistake! Also added test case 10
-
+% Iain Crosby added one case to test code
     e = 0;
     e = e + runtest (true, 1, true); 
     e = e + runtest (false, 20, false); % Case 2 - expected output to false
