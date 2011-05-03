@@ -1,6 +1,12 @@
 % Ian Reichek
 % 3/1/11
 % Function returns number of errors in test
+
+% Tested by Adam Rosenbloom on 5-2-11
+% Missing 'end' to terminate function. Added two test functions. At first I
+% was confused as to why code was written like it is, but the array
+% presents certain challenges.
+
 function y = test_firstLast6()
 	x1 = [1 2 3 4 5 6 7];
 	x2 = [1.1 2.2 3.3 4.4];
@@ -32,4 +38,16 @@ function y = test_firstLast6()
 	
 	if (fx5 == false)
 		y = y+1;
-	end
+    end
+
+    fx6 = firstLast6([0:2:6]); % Added by ASR
+    fx7 = firstLast6([-6:2:8]); % Added by ASR
+    
+    if (fx6 == false)
+        y = y+1;
+    end
+    if(fx7 == true)
+        y = y+1;
+    end
+    
+end

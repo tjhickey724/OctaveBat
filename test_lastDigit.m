@@ -3,7 +3,11 @@ function e=test_lastDigit()
 %by testing it on several points and summing total number of tests that fail. 
 %Sara Shahanaghi
 %Mehreen Asad(Added 5 new test cases, Added comment lines for function description)
-
+%
+% Tested by Adam Rosenbloom on 5-2-2011
+% Added elipsis on fprintf statement for error - it is broken up into two
+% lines, and MATLAB syntax requires that an elipsis is used. Added two new
+% test cases.
 
   e=0;
   e = e + runtest(10,10,true);
@@ -16,6 +20,8 @@ function e=test_lastDigit()
   e = e + runtest(76,76,true);
   e = e + runtest(1000,0,true);
   e = e + runtest(5,34,false);
+  e = e + runtest(115, 235, true);
+  e = e + runtest(1192, 1191, false);
 
 end
 
@@ -32,7 +38,7 @@ end
   fprintf('lastDigit(%d,%d)=%d\n',a,b,result);
   else
     e=1;    % for failed test cases
-fprintf('ERROR--lastDigit does not pass test: lastDigit(%d,%d)->%d <> %d\n',
+fprintf('ERROR--lastDigit does not pass test: lastDigit(%d,%d)->%d <> %d\n', ...
 	a,b,result,answer);
   end
 end

@@ -3,7 +3,10 @@ function e=test_sumDouble()
 % the number of tests that fail
 % Author: Mehreen Asad
 % Homework#4 
-% Due date: 2/17/2011 
+% Due date: 2/17/2011
+%
+% Tested by Adam Rosenbloom on 5-2-2011
+% Everything looks good! Added two test cases.
 
 
   e=0;
@@ -18,7 +21,9 @@ function e=test_sumDouble()
   e = e + runtest(9,9,36);
   e = e + runtest(1,5,6);
   e = e + runtest(3,0,3);
-e = e + runtest(-3,-3,-12 );
+  e = e + runtest(-3,-3,-12);
+  e = e + runtest(900, -53, 847); % Added by ASR
+  e = e + runtest(0, 0, 0); % Added by ASR
 
   
 end
