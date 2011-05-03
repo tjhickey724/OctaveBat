@@ -5,9 +5,11 @@ function e = test_love6()
 % Author: Mehreen Asad
 % Homework#4 
 % Due date: 2/17/2011 
+
 % Modifications:
 % Tim Hickey, chaged the (2,2) case from true to false
 % Josh Silverman, added new test
+% Varenya Prasad
 
   e=0;
   
