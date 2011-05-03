@@ -21,7 +21,9 @@ function e = test_parrot_trouble()
     e = e + runtest (false, 22, false); % Case 9 - expected output to false
     e = e + runtest (true, 11, false);
     e = e + runtest(true, 7, false); % Added by ASR
+    e = e + runtest(true, 22, true); % Added this case icrosby
 end
+
 
 function e = runtest (a, b, answer)
 % runtest(a, b, answer) - calls parrot_trouble(talking, hour)
