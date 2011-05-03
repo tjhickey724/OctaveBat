@@ -3,7 +3,7 @@ function e=test_lastDigit()
 %by testing it on several points and summing total number of tests that fail. 
 %Sara Shahanaghi
 %Mehreen Asad(Added 5 new test cases, Added comment lines for function description)
-%
+% Iain Crosby added one case
 % Tested by Adam Rosenbloom on 5-2-2011
 % Added elipsis on fprintf statement for error - it is broken up into two
 % lines, and MATLAB syntax requires that an elipsis is used. Added two new
