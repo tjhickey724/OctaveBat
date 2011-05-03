@@ -22,7 +22,7 @@ function e=test_lastDigit()
   e = e + runtest(5,34,false);
   e = e + runtest(115, 235, true);
   e = e + runtest(1192, 1191, false);
-e = e + runtest(-12345, 34545); %added this test to check if neg ints work icrosby
+e = e + runtest(-12345, 34545,true); %added this test to check if neg ints work icrosby
 end
 
   function e = runtest(a,b,answer)
