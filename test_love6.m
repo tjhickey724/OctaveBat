@@ -29,6 +29,8 @@ function e = test_love6()
   e = e + runtest(5,10,false);
   e = e + runtest(5,110,false); % changing this case ...
   e = e + runtest(50,11,false); % added a new test case
+  e = e + runtest(0,-6, true);
+  e = e + runtest(-10,-16, true);
   
 end
 
