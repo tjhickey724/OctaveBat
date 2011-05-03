@@ -2,6 +2,7 @@ function e = test_everyNth()
 % test_everyNth() - runs unit tests on the everyNth function and returns number of tests that fail
 % author: Tim Hickey
 % date: 14 Feb 2011
+%This is to see if this works
   % Iain Crosby, runs fine, added one case to test code 'This is a string'
   e=0;
   e += runTest("Miracle",2,"Mrce");
