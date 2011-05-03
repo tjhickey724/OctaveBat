@@ -2,7 +2,7 @@ function test_close10()
 % test_close10() runs unit tests on close10(a,b) and returns the number that fail
 % author: Tim Hickey
 % date: Feb 14 2011 (Valentine's Day)
-
+% Modified by  Iain Crosby, added one case
 % Modified by Sean Kilachand
 % Fixed syntax of test file
 % Added 2 test cases
