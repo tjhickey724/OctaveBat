@@ -7,6 +7,11 @@ function test_sortaSum()
 %modified by Sean Kilachand
 % Corrected syntax
 % Added 2 test cases
+%
+% Tested by Adam Rosenbloom on 5-2-11
+%   Everything looked good, added tab before total numbers of failures, 
+%   and also added two test cases.
+
 e = 0;
 e = e + runtest(3,4,7);
 e = e + runtest(9,4,20);
@@ -20,8 +25,10 @@ e = e + runtest(14,6,20);
 e = e + runtest(14,5,20);
 e = e + runtest(-10,10,0);
 e = e + runtest(15.5, 2.8, 20);
+e = e + runtest(21, -2, 20); % Added by ASR
+e = e + runtest(-20, 5, -15); % Added by ASR
 
-fprintf('Failures: %d\n', e);
+fprintf('\tFailures: %d\n', e);
 end
 
 function e = runtest(a, b, ans)
