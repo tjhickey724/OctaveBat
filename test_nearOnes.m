@@ -3,7 +3,7 @@ function e=test_nearOnes()
 % and returns the number of tests that fail
 % author: Livia Bell
 % date: March 1, 2011
-
+% Iain Crosby fixed two mistakes and added one case
 
   e=0;
   e = e + runtest(75,false);
