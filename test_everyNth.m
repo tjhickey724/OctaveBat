@@ -24,3 +24,5 @@ function k = runTest(s,n,answer)
    printf("ERROR!  everyNth(%s,%d)->%s  <> %s\n",s,n,result,answer);
  end
 end
+
+% Test Git

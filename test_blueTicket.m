@@ -10,7 +10,9 @@ err = err + runTestTicket(11, 0, 1, 5);
 err = err + runTestTicket(1.25, 8.75, 20, 10);
 err = err + runTestTicket(-10, -10, 0, 0);
 err = err + runTestTicket(-10, 0, 1, 0); %changed this case to test git
+err = err + runTestTicket(250, 5, 240, 5); % Test runs fine, added this case...
 end
+
 
 function x = runTestTicket(d, e, f, correct)
 ansr = blueTicket(d, e, f);
