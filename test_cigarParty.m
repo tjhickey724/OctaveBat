@@ -24,15 +24,13 @@ function test_cigarParty()
 	e = e + runtest(-50,false,false);    
     e = e + runtest(60.5, true, true);
     e = e + runtest(.5, false, false);
-<<<<<<< HEAD
-    
+
     e = e + runtest(90, true, true); % Added by ASR
     e = e + runtest(90, false, false); % Added by ASR
-    
-=======
-e = e + runtest(200000,false,false); % Test runs fine, added this case icrosby
-  e = e + runtest(200000,true,true); % and this one icrosby 
->>>>>>> 0300d922e3a8a725bbe961c1c70d192fb0a3673b
+
+    e = e + runtest(200000,false,false); % Test runs fine, added this case icrosby
+    e = e + runtest(200000,true,true); % and this one icrosby 
+
     fprintf('\nErrors: %d\n\n', e);
 end
 
