@@ -13,7 +13,7 @@ function y = test_sameFirstLast()
 	fx3 = sameFirstLast(x3);
 	fx4 = sameFirstLast(x4);
 	fx5 = sameFirstLast(x5);
-	
+ictest= sameFirstLast([1 2 3 4 5 6 7 1])
 	y = 0;
 	if (fx1 == true)
 		y = y+1;
@@ -34,4 +34,8 @@ function y = test_sameFirstLast()
 	if (fx5 == false)
 		y = y+1;
 	end
+
+	if (ictest==false)
+	  y = y+1
+end
 
