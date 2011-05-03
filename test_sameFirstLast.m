@@ -1,7 +1,7 @@
 % Ian Reichek
 % 3/1/11
 % Returns the number of errors in the test
-
+% Iain Crosby added one test, code is kinda funky but works
 function y = test_sameFirstLast()
 	x1 = [1 2 3 4 5 6 7];
 	x2 = [1.1 2.2 3.3 4.4];
