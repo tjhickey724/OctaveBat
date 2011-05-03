@@ -1,4 +1,5 @@
 function err = test_blueTicket()
+% Iain Crosby changed one case and added a new one.
 err = 0;
 err = err + runTestTicket(9, 28, 2, 0);
 err = err + runTestTicket(12, 3, 2, 5);
