@@ -7,6 +7,10 @@ function test_cigarParty()
 % Changed syntax so file would runn properly
 % Added a statement to output the number of errors
 % Added 2 tests
+
+% Tested by Adam Rosenbloom on 5-2-2011
+% Everything ran smoothly, added two test cases.
+
 	e = 0;
 	e = e + runtest(50,false,true);
 	e = e + runtest(30,false,false);
@@ -21,6 +25,9 @@ function test_cigarParty()
     
     e = e + runtest(60.5, true, true);
     e = e + runtest(.5, false, false);
+    
+    e = e + runtest(90, true, true); % Added by ASR
+    e = e + runtest(90, false, false); % Added by ASR
     
     fprintf('\nErrors: %d\n\n', e);
 end
