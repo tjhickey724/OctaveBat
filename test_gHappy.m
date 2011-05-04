@@ -4,7 +4,7 @@ function e=test_gHappy()
 
 %Modifications:
 % Varenya Prasad
-% Modified the test file to modularize the creation of  test cases,
+% Modified the test file to modularize the creation of test cases,
 % and their eventual testing. The file now prints out the results in 
 % the correct format. Also added test cases, mostly to check bounds.
 
