@@ -3,6 +3,7 @@ function test_array_front9()
 
 % Tested by:
 % Josh Silverman (expected arg is a vector, not unpacked elements; added bounds test)
+% Sara Shahanaghi- Third to last test case changed to false b/c 9 not in first four.
 
     e = 0;
     e = e + runtest ([1, 2, 9, 7],true);
@@ -16,7 +17,7 @@ function test_array_front9()
     e = e + runtest ([6, 2, 7, 3],false);
     e = e + runtest ([17, 35, 100, 9],true);
     e = e + runtest ([17, 9],true);
-    e = e + runtest ([17, 35, 100, 4, 9],true);
+    e = e + runtest ([17, 35, 100, 4, 9],false);
     e = e + runtest ([9, 17, 35, 100, 9],true);
     e = e + runtest ([],false);
 end
