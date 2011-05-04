@@ -16,6 +16,8 @@ function e=test_isPrime()
   e = e + runtest(53, true);
   e = e + runtest(97, true);
   e = e + runtest(20, false);
+  e = e + runtest(16, false);
+  e = e + runtest(70, false);
   
 end
 
