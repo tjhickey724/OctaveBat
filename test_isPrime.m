@@ -5,6 +5,7 @@ function e=test_isPrime()
 % Date: 2/21/2011 
 
 %Sara Shahanaghi-- everything looks good, added two test cases
+%Jeremy Patton -- added abritrary test
 
 
   e=0;
@@ -20,6 +21,7 @@ function e=test_isPrime()
   e = e + runtest(20, false);
   e = e + runtest(16, false);
   e = e + runtest(70, false);
+  e += runtest(103, true);
   
 end
 
