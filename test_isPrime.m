@@ -4,6 +4,8 @@ function e=test_isPrime()
 % Author: Siddhi Krishna
 % Date: 2/21/2011 
 
+%Sara Shahanaghi-- everything looks good, added two test cases
+
 
   e=0;
   e = e + runtest(1,false);
