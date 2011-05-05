@@ -5,7 +5,7 @@
 % sample cases are used for testing the correctness of the function
 
 %Modified by Ritu Pradhan
-%Added 3 test cases
+%Added 3 test cases and modified the error statement to display Error message.
 
 function e=test_sumDigit()
 
@@ -40,9 +40,7 @@ function e=runtest(n,answer)
           
           e=1;
           
-          fprintf('sumDigit(%d)=%d<>%d\n',n,result,answer);
-          
-          
+          fprintf('ERROR:sumDigit(%d)=%d<>%d\n',n,result,answer);
           
       end
 
