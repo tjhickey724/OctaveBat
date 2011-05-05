@@ -14,7 +14,7 @@ if test2!=1
    ans=ans+1;
 end
 test3=caught_speeding(85,'True')
-if test3!=2 %changed by Siddhi Krishna. Based on the definition of the function, this speed results in y=2
+if test3!=1
    ans=ans+1;
 end
 test4=caught_speeding(75,'True')
@@ -29,12 +29,24 @@ test6=caught_speeding(40,'True')
 if test6!=0
    ans=ans+1;
 end
-test7=caught_speeding(80) %added by Siddhi Krishna
-if test7!=1
-   ans=ans+1;
-end
-fprintf('Failures: %d\n', ans);
-end % for function
+fprintf"No of failed results are ",ans
+endfunction% for function
+
+function y=caught_speeding(speed,is_birthday)
+% caught_speeding calculates checks the speed of a driver and fine the driver based on the speed range
+% seife Kassahun
+% feb 2011
+if strcmp(is_birthday ,"True")
+   y=0;
+elseif speed<=60
+   y=0;
+elseif speed>=61 & speed<=80
+   y=1;
+else
+   y=2;
+
+endif
+endfunction
 
 
 
