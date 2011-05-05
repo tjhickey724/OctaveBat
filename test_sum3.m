@@ -3,8 +3,6 @@ function count=test_sum3()
 % seife kassahun
 % Feb 2011
 
-%test change file /Huimin Jia
-
 ans=0
 
 test1=sum3([1 2 3])
