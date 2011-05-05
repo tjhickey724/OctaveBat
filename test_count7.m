@@ -30,7 +30,6 @@ e+= runTest(777777777777777,15);
 
 e+= runTest(00000,0);
 e+= runTest(7577,3);
-
 end
 
 function k = runTest(a,answer)
