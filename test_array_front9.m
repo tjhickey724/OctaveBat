@@ -4,6 +4,9 @@ function test_array_front9()
 % Tested by:
 % Josh Silverman (expected arg is a vector, not unpacked elements; added bounds test)
 
+% Modified by Ritu Pradhan
+% Added negative number testcase and other 2 testcases.
+
     e = 0;
     e = e + runtest ([1, 2, 9, 7],true);
     e = e + runtest ([3, 7, 1, 6],false);
@@ -16,9 +19,13 @@ function test_array_front9()
     e = e + runtest ([6, 2, 7, 3],false);
     e = e + runtest ([17, 35, 100, 9],true);
     e = e + runtest ([17, 9],true);
-    e = e + runtest ([17, 35, 100, 4, 9],true);
+    e = e + runtest ([17, 35, 100, 4, 9],false);
     e = e + runtest ([9, 17, 35, 100, 9],true);
     e = e + runtest ([],false);
+	
+	e = e + runtest ([9],true);
+	e = e + runtest ([2],false);
+	e = e + runtest ([-9],false);
 end
 
 function e = runtest (array, answer)
