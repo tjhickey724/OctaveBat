@@ -5,9 +5,11 @@ function e = test_love6()
 % Author: Mehreen Asad
 % Homework#4 
 % Due date: 2/17/2011 
+
 % Modifications:
 % Tim Hickey, chaged the (2,2) case from true to false
 % Josh Silverman, added new test
+% Varenya Prasad
 
   e=0;
   
@@ -27,6 +29,8 @@ function e = test_love6()
   e = e + runtest(5,10,false);
   e = e + runtest(5,110,false); % changing this case ...
   e = e + runtest(50,11,false); % added a new test case
+  e = e + runtest(0,-6, true);
+  e = e + runtest(-10,-16, true);
   
 end
 

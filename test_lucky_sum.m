@@ -3,6 +3,8 @@ function test_lucky_sum()
 %  calling on the function test_function and displaying the results to the
 %  user.
 
+% Varenya Prasad: Testing is already pretty good. Only added tests for negative numbers and zeros.
+
 global error;
 error = 0;
 
@@ -12,6 +14,11 @@ test_function(13, 4, 13, 0)
 test_function(1, 4, 13, 5)
 test_function(1, 13, 2, 1)
 test_function(13, 13, 13, 0)
+
+test_function(7, -1, -1, 5)
+test_function(0,189,13, 189)
+test_function(0,13,5, 0)
+test_function(-1900,13,5, -1900)
 
 if error == 0
     fprintf('The function works!\n')

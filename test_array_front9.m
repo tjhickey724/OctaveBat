@@ -3,6 +3,7 @@ function test_array_front9()
 
 % Tested by:
 % Josh Silverman (expected arg is a vector, not unpacked elements; added bounds test)
+% Sara Shahanaghi- Third to last test case changed to false b/c 9 not in first four.
 
 % Modified by Ritu Pradhan
 % Added negative number testcase and other 2 testcases.

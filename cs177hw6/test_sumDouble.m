@@ -1,4 +1,4 @@
-function e=test_sumDouble()
+function test_sumDouble()
 % test_sumDouble runs several tests and returns
 % the number of tests that fail
 % Author: Mehreen Asad
@@ -7,6 +7,9 @@ function e=test_sumDouble()
 %
 % Tested by Adam Rosenbloom on 5-2-2011
 % Everything looks good! Added two test cases.
+
+% Tested by Sean Kilachand
+% Added two test cases.  Added statement specifying 
 
 
   e=0;
@@ -24,8 +27,10 @@ function e=test_sumDouble()
   e = e + runtest(-3,-3,-12);
   e = e + runtest(900, -53, 847); % Added by ASR
   e = e + runtest(0, 0, 0); % Added by ASR
+  e = e + runtest(-50, 50, 0);
+  e = e + runtest(10.5, 10.5, 42);
 
-  
+  fprintf('\nErrors: %d\n\n', e);
 end
 
 function e = runtest(a,b,answer)

@@ -1,6 +1,6 @@
 % Stuart Davis
 % HW4
-
+% Iain Crosby added one case to test code 'This is a string'
 function e = test_stringE()
 	% stringE(string) Return true if the given string contains between 1 and 3 'e' chars.
 	
@@ -14,7 +14,7 @@ function e = test_stringE()
 	e = e + runTest('eee', 1); % 3 e's
 	e = e + runTest('eEeabcde', 1); % 3 e's
 	e = e + runTest('eeabecde', 0); % >3 e's
-	
+	e = e + runTest('This is a string',0) % added this case, no e's
 	function k = runTest(str,answer)
 		% runTest(str,answer) - checks that stringE(str) == answer
 		result = stringE(str);

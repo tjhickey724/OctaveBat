@@ -20,6 +20,7 @@ err = err + runTestParty(0, 4, 0);
 err = err + runTestParty(1, 2, 0);
 err = err + runTestParty(0, -100, 0);
 err = err + runTestParty(11, 4, 0);
+err = err + runTestParty(-4, 8, 0); %added by Siddhi Krishna
 
 end
 

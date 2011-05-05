@@ -4,6 +4,9 @@ function e=test_isPrime()
 % Author: Siddhi Krishna
 % Date: 2/21/2011 
 
+%Sara Shahanaghi-- everything looks good, added two test cases
+%Jeremy Patton -- added abritrary test
+
 
   e=0;
   e = e + runtest(1,false);
@@ -16,6 +19,9 @@ function e=test_isPrime()
   e = e + runtest(53, true);
   e = e + runtest(97, true);
   e = e + runtest(20, false);
+  e = e + runtest(16, false);
+  e = e + runtest(70, false);
+  e += runtest(103, true);
   
 end
 

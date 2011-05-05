@@ -15,6 +15,7 @@ e = e + runtest([6 7], [1 3], [6 7]);
 e = e + runtest([-4 3], [-3 2], [-4 3]);
 e = e + runtest([-1 -1], [1 1], [1 1]);
 e = e + runtest([-10 1], [9 1], [9 1]);
+e = e + runtest([-5 -6], [-7 -2], [-7 -2]); %testcase added by Siddhi Krishna. 
 
 fprintf('Failures: %d\n', e);
 end

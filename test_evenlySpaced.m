@@ -8,13 +8,14 @@ function test_evenlySpaced()
   e = e + runtest(1,1,1,1);
   e = e + runtest(-1,0,1,1);
   e = e + runtest(1,2,3,1);
-  e = e + runtest(2,3,1,1);
+  e = e + runtest(2,3,1,0); % corrected by Siddhi Krishna
   e = e + runtest(3,2,1,1);
   e = e + runtest(0,0,1,0);
   e = e + runtest(1,1,2,0);
   e = e + runtest(-1,1,-1,0);
   e = e + runtest(1,0,1,0);
   e = e + runtest(-1,-2,-3,1);
+  e = e + runtest(-5, 0, 5, 1);
   printf ('Failures: %d\n',e)
 end
 
