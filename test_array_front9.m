@@ -27,6 +27,7 @@ function test_array_front9()
 	e = e + runtest ([9],true);
 	e = e + runtest ([2],false);
 	e = e + runtest ([-9],false);
+
 end
 
 function e = runtest (array, answer)
