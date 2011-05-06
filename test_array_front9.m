@@ -1,5 +1,8 @@
 function test_array_front9()
 % test_array_front9 runs several tests and returns the number of tests that fail
+% Modified by Huimin Jia - Changed Changed the input type to varargin and
+% therefore changed the output format. You can input any number of ints to
+% test it. At the bottom added anarray_front9 function to match it.
 
     e = 0;
     e = e + runtest (1, 2, 9, 3, 4, true);
@@ -12,7 +15,7 @@ function test_array_front9()
     e = e + runtest (9, 5, false);
     e = e + runtest (6, 2, 7, 3, false);
     e = e + runtest (9999, 999, 99, 9, true)
-end
+end;
 
 function e = runtest (varargin)
 % runtest(varargin) - calls array_front9(varargin)
