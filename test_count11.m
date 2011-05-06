@@ -15,7 +15,6 @@ function test_count11()
 				  "1", 0;
 				  "1111", 2;
 				  "111",1};
-
 	% assertions
 	passes = 0;
 	fails = 0;
