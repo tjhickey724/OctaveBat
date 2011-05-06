@@ -6,6 +6,7 @@ function e=test_isPrime()
 
 %Sara Shahanaghi-- everything looks good, added two test cases
 %Jeremy Patton -- added abritrary test
+%Huimin Jia -- Added a case 0.
 
 
   e=0;
@@ -22,6 +23,7 @@ function e=test_isPrime()
   e = e + runtest(16, false);
   e = e + runtest(70, false);
   e += runtest(103, true);
+  e += runtest(0, false); % added by Huimin Jia
   
 end
 
