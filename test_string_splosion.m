@@ -5,6 +5,7 @@ function e=test_string_splosion(s)
 % author: Huimin Jia 
 
 %Modified by Huimin Jia - Added two case that never thought before: null boundary and whitespace.
+% add one test for this function by Kai Wu
 
   e=0;
   e = e+ runtest('Code','CCoCodCode');
@@ -17,6 +18,7 @@ function e=test_string_splosion(s)
   e = e+ runtest('Bye','BByBye');
   e = e+ runtest('Good','GGoGooGood');
   e = e+ runtest('Bad','BBaBad');
+  e = e+ runtest('mmm','mmmmmm'); % by Kai Wu
   
   e = e+ runtest('',''); % added by Huimin Jia
   e = e+ runtest('a b c','aa a ba b a b c'); % added by Huimin Jia

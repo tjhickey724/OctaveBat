@@ -3,6 +3,7 @@ function e=test_combo_string(s)
 % and returns number of failed tests
 % also prints out info about tests
 % author: Huimin Jia 
+% add two tests for this function by Kai Wu
 
 
   e=0;
@@ -15,6 +16,8 @@ function e=test_combo_string(s)
   e = e+ runtest('','','error');
   e = e+ runtest('45','2','2452');
   e = e+ runtest('hhh','h','hhhhh');
+  e = e+ runtest('4989','12','498912');
+  e = e+ runtest('good','study','goodgoodstudy');
 
 
 end  

@@ -4,6 +4,7 @@ function e=test_inOrder()
 % Author: Siddhi Krishna
 % Date: 2/21/2011 
 
+% Add two tests for this function by Kai Wu
 
   e=0;
   e = e + runtest(1,2,3,true);
@@ -16,6 +17,8 @@ function e=test_inOrder()
   e = e + runtest(-1, 0, 1, true);
   e = e + runtest(-1,-1, 0, true);
   e = e + runtest(-1,-1, -2, false);
+  e = e + runtest(30,30,50, true); % by Kai Wu
+  e = e + runtest(15,30,15, true); % by Kai Wu
   
 end
 

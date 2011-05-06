@@ -6,6 +6,7 @@ function e  = test_greenticket()
 
 % Varenya Prasad
 % Added tests to check for negative numbers and fractions
+% add one test for this function
 
 e=0;
 e=e+runtest(1,1,1,20); % originally was 30, should be 20
@@ -24,6 +25,7 @@ e=e+runtest(0,0,0,20); % Test Added
 e=e+runtest(-4,8,-4,10);
 e=e+runtest(0.5,0.5,100,10);
 
+e=e+runtest(0,4,0,10); % by Kai Wu
 end
 
     function e = runtest(a,b,c,answer)

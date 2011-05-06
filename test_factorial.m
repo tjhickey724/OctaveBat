@@ -15,6 +15,7 @@ function e=test_factorial()
 %   MATLAB, so I made that compatible as well. Further, MATLAB does not
 %   have a printf function, so I changed the printf commands to fprintf.
 %   Added two new test functions.
+%5. Add two tests for this function by Kai Wu
 
 e=0;
 e = e + runTest(5,120);
@@ -36,6 +37,9 @@ e = e + runTest(-0,1);
 e = e + runTest(-4,-24);
 e = e + runTest(10,3628800); % Added by ASR
 e = e + runTest(15, 1307674368000); % Added by ASR
+
+e = e + runTest(16, 20922789888000); % by Kai Wu
+e = e + runTest(17, 355678428096000); % by Kai Wu
 
 end
 

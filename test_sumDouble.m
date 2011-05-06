@@ -7,7 +7,7 @@ function e=test_sumDouble()
 %
 % Tested by Adam Rosenbloom on 5-2-2011
 % Everything looks good! Added two test cases.
-
+% add two tests for this function by Kai Wu
 
   e=0;
   
@@ -24,6 +24,8 @@ function e=test_sumDouble()
   e = e + runtest(-3,-3,-12);
   e = e + runtest(900, -53, 847); % Added by ASR
   e = e + runtest(0, 0, 0); % Added by ASR
+  e = e + runtest(888,666,1554);% by Kai Wu
+  e = e + runtest(-5,5,0.1);% by Kai Wu
 
   
 end
