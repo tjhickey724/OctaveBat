@@ -7,6 +7,8 @@ function y = test_delDel()
 % Author: Gabriel Bronk
 % 3/2/11
 
+% Modified by Huimin Jia - add three cases
+
 y = 0;
 y = y + runtest('computers','computers');
 y = y + runtest('conquer','conquer');
@@ -18,6 +20,9 @@ y = y + runtest('tdel','tdel');
 y = y + runtest('delt','t');
 y = y + runtest(' del',' del');
 y = y + runtest('DELta','DELta');
+y = y + runtest('dAeAl','dAeAl');  % Added by Huimin Jia
+y = y + runtest('de l','de l');  % Added by Huimin Jia
+y = y + runtest('del','');  % Added by Huimin Jia
 end
 
 
