@@ -2,18 +2,23 @@ function e = test_strCount()
 %test_strCount runs several tests and returns number of tests that fails.
 %Author: Ritu Pradhan
 %Date : 03/01/2011
+
+%Modified by Huimin Jia - Added 2 case and modified the wrong test result.
+
 	e = 0;
 	e+= runtest("catcowcat","cat",2);
 	e+= runtest("catcowcat","cow",1);
 	e+= runtest("catcowcat","dog",0);
 	e+= runtest("cacattcowcat","cat",2);
-	e+= runtest("xyx","x",3);
+	e+= runtest("xyx","x",2); % modified answer by Huimin Jia
 	e+= runtest("iiijj","jj",1);
 	e+= runtest("iiijj","j",2);
 	e+= runtest("ababababa","aba",4);
 	e+= runtest("ababababa"," ",0);
 	e+= runtest("ababababa","b",4);
 	e+= runtest("","",0);
+    e+= runtest("iiiii","ii",4);  % added by Huimin Jia
+    e+= runtest("","abc",0);  %added by Huimin Jia
 
 end
 
@@ -27,6 +32,6 @@ function e=runtest(str,sub,answer)
 	else
 		e = 1;
 		fprintf('ERROR:strCount(%s,%s)->%d<> %d\n',str,sub,result,answer);
-	end
+    end;
 
 end
