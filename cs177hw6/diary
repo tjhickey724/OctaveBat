@@ -1,0 +1,161 @@
+test_bigDiff()
+bigDiff(5  4  3)==2
+bigDiff(3)==0
+bigDiff(6   6  10)==4
+bigDiff(5  6  7)==2
+bigDiff(8   9  11)==3
+bigDiff(100   34    5    2)==98
+bigDiff(2  2  1)==1
+bigDiff(0  0  7)==7
+bigDiff(8    8  400)==392
+bigDiff(23  34  22)==12
+
+ans =
+
+     0
+
+test_commonTwo()
+commonTwo(acx,bcdx)=2
+commonTwo(acx,abcxz)=3
+commonTwo(abc,abc)=3
+commonTwo(aabbc,abc)=3
+commonTwo(aabbc,aabbc)=3
+commonTwo(aabbc,abbcc)=3
+commonTwo(bbbbc,abbbc)=2
+commonTwo(abccd,abbcdd)=4
+commonTwo(aabbc,bbb)=1
+commonTwo(aabbc,cc)=1
+
+ans =
+
+     0
+
+test_countYZ
+countYZ(eez yellow)=1
+countYZ(fadfdsf)=0
+countYZ(z y y)=3
+countYZ(wz yey)=2
+countYZ(zebra canny)=1
+countYZ(sssz yyyy yyyy)=3
+countYZ(harvard university)=1
+countYZ(brandeis university)=1
+countYZ(Kutz)=1
+countYZ(ZZZZZZ)=1
+
+ans =
+
+     0
+
+test_equalsIsNot
+equalIsNot(isisnot)=0
+equalIsNot(isnot)=1
+equalIsNot(isnotnot)=0
+equalIsNot(notnot)=0
+equalIsNot(isxnotanotis)=1
+equalIsNot(is)=0
+equalIsNot(aisnota)=1
+equalIsNot(ii)=1
+equalIsNot(ee)=1
+equalIsNot(notisisnot)=1
+
+ans =
+
+     0
+
+test_maxBlock
+maxBlock(hoopla)=2
+maxBlock(aaabbcc)=3
+maxBlock(ttt)=3
+maxBlock(efffEEE)=3
+maxBlock(s)=1
+maxBlock(wwwWWW)=3
+maxBlock(xt)=1
+maxBlock(ddddrst)=4
+maxBlock(abcd)=1
+maxBlock(acccccccb)=7
+
+ans =
+
+     0
+
+test_powerN
+powerN(3,2)=9
+powerN(5,3)=125
+powerN(9,3)=729
+powerN(10,3)=1000
+powerN(7,2)=49
+powerN(4,4)=256
+powerN(8,3)=512
+powerN(6,3)=216
+powerN(2,5)=32
+powerN(11,2)=121
+
+ans =
+
+     0
+
+test_scores100
+scores100(100  100    1)==1
+scores100(3)==0
+scores100(6   6  10)==0
+scores100(100  100   10)==1
+scores100(100  100    5)==1
+scores100(100   34    5    2)==0
+scores100(2  2  1)==0
+scores100(0  100    7)==0
+scores100(8  100  100)==1
+scores100(23  34  22)==0
+
+ans =
+
+     0
+
+test_scoresIncreasing
+scoresIncreasing(5  4  3)==0
+scoresIncreasing(3)==1
+scoresIncreasing(6   6  10)==1
+scoresIncreasing(5  6  7)==1
+scoresIncreasing(8   9  11)==1
+scoresIncreasing(100   34    5    2)==0
+scoresIncreasing(2  2  1)==0
+scoresIncreasing(0  0  7)==1
+scoresIncreasing(8    8  400)==1
+scoresIncreasing(23  34  22)==0
+
+ans =
+
+     0
+
+test_sumDigit
+sumDigit(32)=5
+sumDigit(53)=8
+sumDigit(953)=17
+sumDigit(103)=4
+sumDigit(4944)=21
+sumDigit(256)=13
+sumDigit(5121)=9
+sumDigit(1216)=10
+sumDigit(2532)=12
+sumDigit(121)=4
+
+ans =
+
+     0
+
+test_sumDigits
+sumDigits(1asds3)=4
+sumDigits(345)=12
+sumDigits(dsdsd1)=1
+sumDigits(1eee)=1
+sumDigits(d3d78d)=18
+sumDigits(23)=5
+sumDigits(111)=3
+sumDigits(23)=5
+sumDigits(4)=4
+sumDigits(45)=9
+
+ans =
+
+     0
+
+diary off
