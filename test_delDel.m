@@ -7,7 +7,7 @@ function y = test_delDel()
 % Author: Gabriel Bronk
 % 3/2/11
 
-% Modified by Huimin Jia - add three cases
+% Modified by Huimin Jia - add 4 cases and modify a determination problem.
 
 y = 0;
 y = y + runtest('computers','computers');
@@ -23,6 +23,7 @@ y = y + runtest('DELta','DELta');
 y = y + runtest('dAeAl','dAeAl');  % Added by Huimin Jia
 y = y + runtest('de l','de l');  % Added by Huimin Jia
 y = y + runtest('del','');  % Added by Huimin Jia
+y = y + runtest('de','de');  % Added by Huimin Jia
 end
 
 
@@ -37,14 +38,17 @@ function q = runtest(a,answer);
 
 result = delDel(a);
 
-if (result == answer);
+if isequal(result,answer); 
+% if input A and B are null, Octave can not determine "if A==B", but "isequal" can, so using isequal is much better.
+% the case: runtest('del','') is best to show this. commented by Huimin Jia
+
 q = 0;
-fprintf('delDel(%s)=%s\n',a,result);
+fprintf('      delDel(%s)=%s\n',a,result);
 else
 q = 1;
 fprintf('ERROR:delDel(%s)->%s <> %s\n',
        a,result,answer);
 
-end
+end;
 
 end
