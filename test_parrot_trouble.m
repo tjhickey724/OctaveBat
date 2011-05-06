@@ -9,6 +9,9 @@ function e = test_parrot_trouble()
 % the cases so that they have the correct expected output! This was a
 % fundamental mistake! Also added test case 10
 % Iain Crosby added one case to test code
+
+% Modified by: Huimin Jia - Added an additional case.
+
     e = 0;
     e = e + runtest (true, 1, true); 
     e = e + runtest (false, 20, false); % Case 2 - expected output to false
@@ -22,6 +25,7 @@ function e = test_parrot_trouble()
     e = e + runtest (true, 11, false);
     e = e + runtest(true, 7, false); % Added by ASR
     e = e + runtest(true, 22, true); % Added this case icrosby
+    e = e + runtest (false, 15, false); %Added by Huimin Jia
 end
 
 
@@ -34,9 +38,9 @@ function e = runtest (a, b, answer)
     result = parrot_trouble(a, b);
     if (result == answer)
        e = 0;
-       fprintf('  parrot_trouble(%d, %d) = %d\n', a , b, result);
+       fprintf('       parrot_trouble(%d, %d) = %d\n', a , b, result);
     else
        e = 1;
        fprintf('ERROR: parrot_trouble(%d, %d)->%d <> %d\n', a, b, result, answer);
-    end
+    end;
 end
