@@ -33,10 +33,10 @@ function k = runTest(a,b,answer)
 
  if (result==answer)
    k=0; 
-   fprintf('        close10(%d,%d)->%d\n',a,b,answer);
+   fprintf('        close10(%g,%g)->%g\n',a,b,answer);
  else
    k=1; 
-   fprintf('ERROR!  close10(%d,%d)->%d  <> %d\n',a,b,result,answer);
+   fprintf('ERROR!  close10(%g,%g)->%g  <> %g\n',a,b,result,answer);
  end
 end
 
