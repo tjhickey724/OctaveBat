@@ -4,6 +4,7 @@ function e=test_SleepIn()
 % Author: Iain Crosby
 % Date 2/28/11
 % Mehreen Asad checked the test case and it runs fine. 
+% Ian Reichek ran the test case with no errors
 
 e=0;
 e= e + runtest(true,true,true);
