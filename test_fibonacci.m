@@ -10,6 +10,7 @@ function e= test_fibonacci()
 % 2. Josh Silverman (Good test coverage)
 % 3. Antonio Cancio (Added a new test case)
 % 3. Jeremy Patton (fixed fib 11 test)
+% 4.Seife kassahun (Passes all the tests)
 
 e=0;
 e+= runTest(0,0);
@@ -24,6 +25,7 @@ e+= runTest(8,21);
 e+= runTest(9,34);
 e+= runTest(10,55);
 e+= runTest(11,89);
+
 
 function k = runTest(a,answer)
 % runTest(n,answer) - checks that fibonacci(n)==answer
