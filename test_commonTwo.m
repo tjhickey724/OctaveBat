@@ -7,6 +7,8 @@
 
 %Modified By Ritu Pradhan
 %Added null boundary test and 2 other testcases
+% Modified By seife kassahun
+% Added two test cases by using non alphabatic charcter and the function works fine
 function e=test_commonTwo()
 
 e=0;
@@ -21,7 +23,8 @@ e=e+runtest(['b','b','b','b','c'],['a','b','b','b','c'],2);
 e=e+runtest(['a','b','c','c','d'],['a','b','b','c','d','d'],4);
 e=e+runtest(['a','a','b','b','c'],['b','b','b'],1);
 e=e+runtest(['a','a','b','b','c'],['c','c'],1);
-
+e=e+runtest(['$','^','v'],['$','$'],1);% added by siefe
+e=e+runtest(['aa','bb'],['aa','bb','dd'],2);% added by seife
 e=e+runtest([''],[''],0);
 e=e+runtest(['a'],['a','b'],1);
 e=e+runtest(['a'],['b'],0);
