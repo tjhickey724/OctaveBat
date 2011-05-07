@@ -3,6 +3,7 @@ function e=test_triangle()
 %author-Robin Jha
 %date-02/21/2011
 %Mehreen Asad (Added 2 Test cases)
+%add 1 test for this function by Kai Wu
 
 e=0;
 e+= runTest(5,15);
@@ -17,6 +18,7 @@ e+= runTest(3,6);
 e+= runTest(9,45);
 e+= runTest(10,55);
 e+= runTest(12,78);
+e+= runTest(20,2100);% by Kai Wu
 
 end
 

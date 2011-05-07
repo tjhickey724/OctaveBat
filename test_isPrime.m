@@ -6,7 +6,8 @@ function e=test_isPrime()
 
 %Sara Shahanaghi-- everything looks good, added two test cases
 %Jeremy Patton -- added abritrary test
-
+%Huimin Jia -- Added a case 0.
+%Ian Reichek -- added a large prime number test
 
   e=0;
   e = e + runtest(1,false);
@@ -22,7 +23,8 @@ function e=test_isPrime()
   e = e + runtest(16, false);
   e = e + runtest(70, false);
   e += runtest(103, true);
-  
+  e += runtest(0, false); % added by Huimin Jia
+  e = e + runtest(2621, true); % added by Ian Reichek
 end
 
 function e=runtest(a,answer)
