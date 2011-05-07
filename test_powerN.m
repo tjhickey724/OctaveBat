@@ -32,7 +32,7 @@ e=e+runtest(0,2,0);
 
 e=e+runtest(2,1,2);
 e=e+runtest(2,0,1);
-
+e=e+runtest(2,-2,.25); %added by Ian Reichek
 end
 
 
