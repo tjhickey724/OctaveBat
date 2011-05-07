@@ -6,6 +6,8 @@ function test_biggerTwo()
 
 %Modified by Huimin Jia - Added some case: Decimal, more number, zero, and
 %null' sum case.
+% Modified by seife kassahun
+%fractional numbers and square roots and it works good
 
 e = 0;
 e = e + runtest([1 2], [3 4], [3 4]);
@@ -25,6 +27,8 @@ e = e + runtest([1 2 3 4 5 6], [1 2 3], [1 2 3 4 5 6]); % added by Huimin Jia.
 e = e + runtest([0 0], [0 0 0], [0 0]); % added by Huimin Jia.
 e = e + runtest([], [1], [1]); % added by Huimin Jia.
 e = e + runtest([], [], []); % added by Huimin Jia.
+e = e+runtest(1/2,5/2,5/2);
+e =  e+runtest(sqrt(2),sqrt(5),sqrt(5));
 
 fprintf('Failures: %d\n', e);
 end
