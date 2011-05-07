@@ -13,6 +13,7 @@ function test_cigarParty()
 % Everything ran smoothly, added two test cases.
 
 % Varenya Prasad - added negative number check and upper bound check for weekdays.
+%seife kassahun-added two test cases check using decimal numbers closer two the intervals
 
 	e = 0;
 	e = e + runtest(50,false,true);
@@ -36,6 +37,8 @@ function test_cigarParty()
 	
 	e = e + runtest(-10, true, false); % negative number test 
 	e = e + runtest(60, false, true); % bounds check
+	e=e+runtest(39.9,true,false);% added by seife
+	e=e+runtest(60.1,false,false);% added by seife
 
     fprintf('\nErrors: %d\n\n', e);
 end
@@ -49,6 +52,6 @@ function e=runtest(cigars,isWeekend,answer)
 		fprintf('      cigarParty(%d,%d)=%d\n',cigars,isWeekend,result);
 	else
 		e=1;
-		fprintf('ERROR:cigarParty(%d,%d)->%d != %d\n',cigars,isWeekend,result,answer);
+		fprintf('ERROR:cigarParty(%d,%d)->%s != %d\n',cigars,isWeekend,result,answer);
     end
 end
