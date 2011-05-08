@@ -1,6 +1,8 @@
 function test_count11()
-
-	% array of test values
+% array of test values
+	
+% Modified by Ritu Pradhan
+% Added 2 new test cases.
 	testValues = {'ab11c11d11ar', 3; 
 				  "ssssabcdar", 0; 
 				  "abcbcdabcr11", 1; 
@@ -10,8 +12,9 @@ function test_count11()
 				  "abcb1cdabcr", 0; 
 				  "", 0; 
 				  "11", 1; 
-				  "1", 0};
-
+				  "1", 0;
+				  "1111", 2;
+				  "111",1};
 	% assertions
 	passes = 0;
 	fails = 0;

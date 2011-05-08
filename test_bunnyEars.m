@@ -35,6 +35,7 @@ function e=test_bunnyEars()
   e = e + runtest(0, 0);
   e = e + runtest(200, 400); % Added by ASR
   e = e + runtest(90, 180); % Added by ASR
+  e = e + runtest(12, 24); % Added by Abhirup Das
   
 end
 

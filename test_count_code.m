@@ -3,6 +3,7 @@ function e=test_count_code(s)
 % and returns number of failed tests
 % also prints out info about tests
 % author: Huimin Jia
+% add 1 test item by Kai Wu
 
   e=0;
   e = e+ runtest('aaacodebbb',1);
@@ -18,6 +19,7 @@ function e=test_count_code(s)
   e = e+ runtest('AAcodeBBcoleCCccoreDD',3);
   e = e+ runtest('AAcodeBBcoleCCccorfDD',2);
   e = e+ runtest('coAcodeBcoleccoreDD',3);
+  e = e+ runtest('zcodecodeodedee',5);
 
 
 end  

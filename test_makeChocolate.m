@@ -15,7 +15,7 @@ function test_makeChocolate()
   e = e + runtest(1,1,2,-1);
   e = e + runtest(7,13,21,1);
   e = e + runtest(7,3,21,6);
- 
+  e = e + runtest(.1,.2,.3,.4); %added by Ian Reichek
 
   printf ('Failures: %d\n',e)
 end
