@@ -8,6 +8,7 @@ function e=test_has23()
   e = e + runtest(2,2,true);
   e = e + runtest(3,2,true);
   e = e + runtest(3,4,true);
+  e = e + runtest(1,51, false); % added by Abhirup Das
   e = e + runtest(4,53,false)
   e = e + runtest(-2, 3, true); %added by Siddhi Krishna
   
