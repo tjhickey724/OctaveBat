@@ -8,9 +8,11 @@ function e=test_lastDigit()
 % Added elipsis on fprintf statement for error - it is broken up into two
 % lines, and MATLAB syntax requires that an elipsis is used. Added two new
 % test cases.
+% Checked and added new test case _ Abhirup Das
 
   e=0;
   e = e + runtest(10,10,true);
+  e = e + runtest(1,1, true); %test added by Abhirup Das
   e = e + runtest(19,18,false);
   e = e + runtest(1002,102,true);
   e = e + runtest(1000,1001,false);

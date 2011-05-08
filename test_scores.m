@@ -6,6 +6,7 @@ function e=test_scores()
 % Varenya Prasad: Modified the runTest function to ouput the vector properly as a string, 
 %	and added tests to check bounds
 
+% Already good - Added test case _ Abhirup Das
 
 e=0;
 e= e+runTest([1,100,100,1],1);
@@ -18,6 +19,8 @@ e= e+runTest([1,100,99,100],0);
 e= e+runTest([100,1,100,100],1);
 e= e+runTest([1,2,3,4,5],0);
 e= e+runTest([1,2,100,4,5],0);
+
+e = e + runTest([0],0);
 
 e= e+runTest([1,100,-100,4,5],0);
 e= e+runTest([],0);

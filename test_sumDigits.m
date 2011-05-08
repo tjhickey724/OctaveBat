@@ -4,7 +4,7 @@
 
 % This is the test bed for the function commonTwo
 % sample cases are used for testing the correctness of the function
-
+% test Case added by Abhirup
 
 function e=test_sumDigits()
 
@@ -20,6 +20,8 @@ e=e+runtest('111',3);
 e=e+runtest('23',5);
 e=e+runtest('4',4);
 e=e+runtest('45',9);
+e = e + runtest('y1absfn12vzhdjf', 4); % test added by Abhirup Das
+
 
 
 end
