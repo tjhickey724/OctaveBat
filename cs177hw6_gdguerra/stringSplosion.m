@@ -9,7 +9,7 @@ if ~ischar(s)
 	disp('Error: s must be a character string')
 	f = -1;
 else
-	if length(s) == 1
+	if length(s) <= 1
 		f = s;
 	else
 		f = [stringSplosion(s(1:length(s)-1)) s];

@@ -12,11 +12,11 @@ if ~ischar(s)
 else
 	i = 2;
 	f = [];
-	s = ['g' s 'g'];
+	a = ['g' s 'g'];
 	
-	while i < length(s)
-		if s(i) == 'g'
-			if s(i-1) == 'g' | s(i+1) == 'g'
+	while i < length(a)
+		if a(i) == 'g'
+			if a(i-1) == 'g' | a(i+1) == 'g'
 				f = [f 1];
 			else
 				f = [f 0];
@@ -25,7 +25,7 @@ else
 		i = i + 1;
 	end
 	
-	if any(f == 0)
+	if any(f == 0) | length(f) == 0 | length(s) == 1
 		f = 0;
 	else
 		f = 1;
