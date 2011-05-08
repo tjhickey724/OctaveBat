@@ -8,9 +8,12 @@ function test_biggerTwo()
 %null' sum case.
 % Modified by seife kassahun
 %fractional numbers and square roots and it works good
+% Clarified and seems to be working great - Great way to summarize the test
+% results using num2str - Abhirup Das
 
 e = 0;
 e = e + runtest([1 2], [3 4], [3 4]);
+e = e + runtest(4, [1 3 5], [1 3 5]); % Abhirup Das added this test case
 e = e + runtest([3 4], [1 2], [3 4]);
 e = e + runtest([1 1], [1 2], [1 2]);
 e = e + runtest([2 1], [1 1], [2 1]);
@@ -43,5 +46,4 @@ if(isequal(biggerTwo(a, b), ans))
 else
 	e = 1;
 	fprintf('Error: biggerTwo([%s], [%s]) != [%s]\n\n',num2str(a), num2str(b), num2str(ans));
-
 end
