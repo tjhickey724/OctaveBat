@@ -7,6 +7,7 @@
 % Modified by seife kassahun
 % added two test cases and the function works good
 % Looks great - added one more test file - Abhirup Das
+% added one test case - Tarif Riyad Rahman
 
 
 function e=test_bigDiff()
@@ -25,7 +26,7 @@ e=e+runtest([8 8 400],392);% test case by Tarif
 e=e+runtest([23,34,22],12);% test case by Tarif
 e=e+runtest([-25 -50 100],150);% added by seife
 e=e+runtest([ 100/2 900/300],47)% added by seife
-
+e=e+runtest([12 88 99],87); % added by Tarif
 
 end
 
