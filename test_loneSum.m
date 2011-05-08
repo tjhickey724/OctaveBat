@@ -19,6 +19,7 @@ e = e + runtest(22, 22, 7, 7);
 e = e + runtest(11, 11, 11, 0);
 e = e + runtest(1, 99, 3, 103);
 e = e + runtest(0, 0, 6, 6);
+e = e + runtest(sqrt(1), sqrt(4), sqrt(9), 6); % Abhirup Das added one test
 
 if e == 0
     fprintf('Tests succesful!')
