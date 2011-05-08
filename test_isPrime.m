@@ -9,11 +9,16 @@ function e=test_isPrime()
 %Huimin Jia -- Added a case 0.
 %Ian Reichek -- added a large prime number test
 % seife kassahun---added a negative number
+% Abhirup Das --- added a test case
+
 
   e=0;
   e = e + runtest(1,false);
   e = e + runtest(2,true);
   e = e + runtest(3,true);
+ 
+  e = e + runtest(12, false); % test case added by Abhirup Das
+ 
   e = e + runtest(10,false);
   e = e + runtest(100,false);
   e = e + runtest(7, true);
