@@ -2,6 +2,7 @@ function e=test_factorial()
 %runs unit tests on factorial(n) and returns if the cases fail or pass
 %author-Robin Jha
 %date-02/21/2011
+%first modification test
 
 %Tested by:
 %1. Mehreen Asad (Added a new test case)
