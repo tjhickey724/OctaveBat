@@ -18,7 +18,7 @@ e= e + runtest(0,0,1,1);
 e= e + runtest(1,1,1,1);
 e= e + runtest(0,0,0,0);
 e=e+runtest(9/8,21/8,50/5,10);% added by seife kassahun
-e=e+runtest(sqrt(2),sqrt(1),sqrt(5),sqrt(7),sqrt(7));% added by seife kassahun
+e=e+runtest(sqrt(2),sqrt(1),sqrt(5),sqrt(5));% added by seife kassahun
 
 
 

@@ -12,7 +12,7 @@
 function e=test_bigDiff()
 
 e=0;
-e = e + runtest( [4 36 32], 28); %test case by Abhirup
+e = e + runtest( [4 36 32], 32); %test case by Abhirup
 e=e+runtest([5 4 3],2);% test case by Tarif
 e=e+runtest([3],0);% test case by Tarif
 e=e+runtest([6,6,10],4);% test case by Tarif

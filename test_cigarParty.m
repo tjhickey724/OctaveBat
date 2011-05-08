@@ -39,7 +39,7 @@ function test_cigarParty()
 	e = e + runtest(60, false, true); % bounds check
 	e=e+runtest(39.9,true,false);% added by seife
 	e=e+runtest(60.1,false,false);% added by seife
-    e = e + runtest(32,false,true); %added by mlordeus (blaze2555)
+    e = e + runtest(32,false,false); %added by mlordeus (blaze2555)
 
     fprintf('\nErrors: %d\n\n', e);
 end

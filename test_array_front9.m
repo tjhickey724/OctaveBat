@@ -4,7 +4,7 @@ function test_array_front9()
 % Modified by Huimin Jia - Changed Changed the input type to varargin and
 % therefore changed the output format. You can input any number of ints to
 % test it. At the bottom added anarray_front9 function to match it.
-Modified by seife kassahun
+%Modified by seife kassahun
 %modified some of the output function and added two test cases and it works good
 
     e = 0;
