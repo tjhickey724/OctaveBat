@@ -3,6 +3,8 @@ function e=test_intMax()
 %  the number of tests that fail
 % Author: Iain Crosby
 % Date 2/28/11
+%Modified by seife kassahun 
+% added test cases using negative fractional numbers and sqaure root numbers
 
 e=0;
 e= e + runtest(1,2,3,3);
@@ -15,6 +17,8 @@ e= e + runtest(7463837,9287230949,90238,9287230949);
 e= e + runtest(0,0,1,1);
 e= e + runtest(1,1,1,1);
 e= e + runtest(0,0,0,0);
+e=e+runtest(9/8,21/8,50/5,10);% added by seife kassahun
+e=e+runtest(sqrt(2),sqrt(1),sqrt(5),sqrt(5));% added by seife kassahun
 
 
 

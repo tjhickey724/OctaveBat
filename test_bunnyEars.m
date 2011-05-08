@@ -11,6 +11,12 @@ function e=test_bunnyEars()
 	% one question: why is the arg type check in the test? 
 	% shouldn't it be in the function? Seems like the test
 	% is testing the test in this case, not the function.
+% Tested by Adam Rosenbloom on 5-2-11
+%   Everything looked good, but I agree with Josh -- it's unclear why you
+%   check the argument in the test function rather than the function
+%   itself. Also, runtest(10.5, 21) returns an error (expected), but it
+%   seems strange because this error is supposde to appear and shouldn't be
+%   counted as an error.  Added two test functions.
   e = 0;
  
   e = e + runtest(1,2);
@@ -27,6 +33,9 @@ function e=test_bunnyEars()
   e = e + runtest(21,42);    
   e = e + runtest(10.5, 21);
   e = e + runtest(0, 0);
+  e = e + runtest(200, 400); % Added by ASR
+  e = e + runtest(90, 180); % Added by ASR
+  e = e + runtest(12, 24); % Added by Abhirup Das
   
 end
 

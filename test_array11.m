@@ -3,8 +3,11 @@ function e = test_array11()
 % Author: Ritu Pradhan
 %Date : 03/01/2011
 
-%Modified By Ritu Pradhan
-%Added negative testcases 
+% Modified by: 
+% 1. Ritu Pradhan Added negative testcases
+% 2. Antonio Cancio Added an additional case
+% 3. Varenya Prasad - already great test cases! Just modified print statements to print an array
+
 	e = 0;
 	e+=runtest([11,5,1,55,11],2);
 	e+=runtest([11,5,55,11],2);
@@ -20,6 +23,7 @@ function e = test_array11()
 	e+=runtest([-56,58,1],0);
 	e+=runtest([-11,58,1],0);
 	e+=runtest([-11,11,1],1);
+	e+=runtest([1, 11, 1],1);
 end
 
 function e = runtest(array,answer)
@@ -28,11 +32,11 @@ function e = runtest(array,answer)
 	 
 	if(result == answer)
 		e = 0;
-		fprintf('		array11{'); fprintf(' %d ',array); fprintf('}=');fprintf('%d\n',result);
+		fprintf('		array11 {'); fprintf(' %s ',mat2str(array)); fprintf('} -->');fprintf('%d\n',result);
 		 	
 	else
 		e = 1;
-		fprintf('ERROR:array11{');fprintf(' %d ',array);fprintf('}-->%d<>%d\n',result,answer);
+		fprintf('ERROR:array11 {');fprintf(' %s ',mat2str(array));fprintf('} -->%d<>%d\n',result,answer);
 		
 	end	
 end	

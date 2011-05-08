@@ -5,6 +5,8 @@
 %positive and negative integers.
 %Modified fprintf so that it shows both the correct value and the value passed in the function)
 
+%Modified by Huimin Jia - Added a case.
+
 function err = test_teaParty()
 
 err = 0;
@@ -20,6 +22,8 @@ err = err + runTestParty(0, 4, 0);
 err = err + runTestParty(1, 2, 0);
 err = err + runTestParty(0, -100, 0);
 err = err + runTestParty(11, 4, 0);
+err = err + runTestParty(-4, 8, 0); %added by Siddhi Krishna
+err = err + runTestParty(36, 6, 2); %added by Huimin Jia
 
 end
 
