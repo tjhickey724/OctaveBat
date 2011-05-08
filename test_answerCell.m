@@ -1,4 +1,4 @@
-function e=test_answercell()
+function e=test_answerCell()
 %
 % Tests the answerCell function several cases and returns the number of errors.
 %
@@ -16,15 +16,15 @@ function e=test_answercell()
 %
                 %isMorning %isMom %isAsleep %expect
 
-e=0
-e = e +  runtest( true  , true  , true  , false ) ; 
-e = e +  runtest( true  , true  , false , true ) ; 
-e = e +  runtest( true  , false , true  , false ) ; 
-e = e +  runtest( true  , false , false , false  ) ; 
-e = e +  runtest( false , true  , true  , false ) ; 
-e = e +  runtest( false , true  , false , true ) ; 
-e = e +  runtest( false , false , true  , false ) ; 
-e = e +  runtest( false , false , false , true  ) ; 
+e=0 ; 
+e = e +  runtest(true,true,true,      false ) ; 
+e = e +  runtest(true,true,false,     true  ) ; 
+e = e +  runtest(true,false,true,     false ) ; 
+e = e +  runtest(true,false,false,    false ) ; 
+e = e +  runtest(false,true,true,     false ) ; 
+e = e +  runtest(false,true,false,    true  ) ; 
+e = e +  runtest(false,false,true,    false ) ; 
+e = e +  runtest(false,false,false,   true  ) ; 
 
 
 
@@ -33,12 +33,13 @@ function e = runtest(test_isMorning,test_isMom,test_isAsleep,answer)
 
     result=answerCell(test_isMorning,test_isMom,test_isAsleep) ; 
 
-    if ( result == answer )]
+    if ( result == answer )
         e=0 ;
-        fprintf('       answerCell(%s,%s,%s)=%s\n',test_isMorning,test_isMom,test_isAsleep,answer) ; 
+        fprintf('       answerCell(%d,%d,%d)=%d\n',test_isMorning,test_isMom,test_isAsleep,answer) ; 
     else
         e=1 ; 
-        fprintf('ERROR: answerCell(%s,%s,%s) returned %s, should be %s.\n',test_isMorning,test_isMom,test_isAsleep,answer) ; 
+        fprintf('ERROR: answerCell(%d,%d,%d) returned %d, should be %d.\n',test_isMorning,test_isMom,test_isAsleep,result,answer) ; 
+    end
 end
 
 
