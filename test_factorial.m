@@ -16,7 +16,7 @@ function e=test_factorial()
 %   have a printf function, so I changed the printf commands to fprintf.
 %   Added two new test functions.
 %5. Add two tests for this function by Kai Wu
-
+%6. Add two test cases - Abhirup Das
 e=0;
 e = e + runTest(5,120);
 e = e + runTest(1,1);
@@ -30,7 +30,8 @@ e = e + runTest(3,6);
 e = e + runTest(7,5040);
 e = e + runTest(11,39916800);
 e = e + runTest(20,2432902008176640000);
-
+e = e + runTest(-3, -6); %test case added by Abhirup Das
+e = e + runTest(12, 479001600); %test case added by Abhirup Das
 e = e + runTest(-5,-120);
 e = e + runTest(-1,-1);
 e = e + runTest(-0,1);
