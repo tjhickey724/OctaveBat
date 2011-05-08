@@ -43,6 +43,9 @@ e = e + runTest(15, 1307674368000); % Added by ASR
 e = e + runTest(16, 20922789888000); % by Kai Wu
 e = e + runTest(17, 355678428096000); % by Kai Wu
 
+e = e + runTest(13, 6227020800); % by Robin Jha
+e = e + runTest(14, 87178291200); % by Robin Jha
+
 end
 
 function k = runTest(n,answer)

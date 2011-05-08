@@ -19,6 +19,9 @@ e = e + runtest([1 1 1 1 1], 1);
 e = e + runtest([0 2 3 2 3], 0);
 e = e + runtest([-4 -2 -1 5 6], 0); %added by Siddhi Krishna
 e = e + runtest([1 2 3 4],1); % added by Tarif Riyad Rahman
+e = e + runtest([2 3 3], 1);% by Robin Jha
+e = e + runtest([-1 -3 2], 0);% by Robin Jha
+e = e + runtest([0 1 2], 1);% by Robin Jha
 
 fprintf('Failures: %d\n', e);
 end

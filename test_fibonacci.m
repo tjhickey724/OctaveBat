@@ -26,6 +26,10 @@ e+= runTest(9,34);
 e+= runTest(10,55);
 e+= runTest(11,89);
 
+e+= runTest(12,144);% by Robin Jha
+e+= runTest(13,233);% by Robin Jha
+e+= runTest(14,377);% by Robin Jha
+
 
 function k = runTest(a,answer)
 % runTest(n,answer) - checks that fibonacci(n)==answer

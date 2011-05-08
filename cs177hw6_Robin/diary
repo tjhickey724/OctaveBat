@@ -1,0 +1,354 @@
+octave-3.2.4.exe:5> bigDiff
+error: `arr' undefined near line 5 column 10
+error: evaluating argument list element number 1
+error: evaluating argument list element number 1
+error: called from:
+error:   C:\Users\Robin\Desktop\cs177Hw4\bigDiff.m at line 5, column 5
+octave-3.2.4.exe:5> bigDiff([-2 -5 10])
+ans =  15
+octave-3.2.4.exe:6> function diff = bigDiff(arr)
+> %Given an array length 1 or more of ints, return the difference between the
+> %largest and smallest values in the array.
+> 
+> diff=max(arr)-min(arr);
+> 
+> end
+octave-3.2.4.exe:7> 
+octave-3.2.4.exe:7> bigDiff([1.5 -1.5 3])
+ans =  4.5000
+octave-3.2.4.exe:8> test_scoresIncreasing([2 3 3])
+error: `test_scoresIncreasing' undefined near line 8 column 1
+octave-3.2.4.exe:8> scoresIncreasing([2 3 3])
+bool = 0
+ans = 0
+octave-3.2.4.exe:9> scoresIncreasing([2 3 3])
+bool =  1
+ans =  1
+octave-3.2.4.exe:10> factorial(12)
+ans = The factorial of 1 is 1 
+ 
+ans = The factorial of 2 is 2 
+ 
+ans = The factorial of 3 is 6 
+ 
+ans = The factorial of 4 is 24 
+ 
+ans = The factorial of 5 is 120 
+ 
+ans = The factorial of 6 is 720 
+ 
+ans = The factorial of 7 is 5040 
+ 
+ans = The factorial of 8 is 40320 
+ 
+ans = The factorial of 9 is 362880 
+ 
+ans = The factorial of 10 is 3628800 
+ 
+ans = The factorial of 11 is 39916800 
+ 
+ans = The factorial of 12 is 479001600 
+ 
+ans =  479001600
+octave-3.2.4.exe:11> scores([100,1,100])
+ans = 0
+octave-3.2.4.exe:12> scores([100,001,100,100])
+ans =  1
+octave-3.2.4.exe:13> triangle(14)
+blocks =  1
+blocks =  3
+blocks =  6
+blocks =  10
+blocks =  15
+blocks =  21
+blocks =  28
+blocks =  36
+blocks =  45
+blocks =  55
+blocks =  66
+blocks =  78
+blocks =  91
+blocks =  105
+ans =  105
+octave-3.2.4.exe:14> loneSum(9,2,2)
+sum =  9
+ans =  9
+octave-3.2.4.exe:15> loneSum(9,2,3)
+sum =  14
+ans =  14
+octave-3.2.4.exe:16> loneSum(9,2,1)
+sum =  12
+ans =  12
+octave-3.2.4.exe:17> loneSum(9,9,1)
+sum =  1
+ans =  1
+octave-3.2.4.exe:18> luckySum(13,13,3,3)
+sum = 0
+ans = 0
+octave-3.2.4.exe:19> luckySum(3,13,3,3)
+sum =  3
+ans =  3
+octave-3.2.4.exe:20> luckySum(3,3,3,13)
+sum =  9
+ans =  9
+octave-3.2.4.exe:21> bunnyEars(0)
+ans = 0
+octave-3.2.4.exe:22> bunnyEars(10)
+ans =  20
+octave-3.2.4.exe:23> bunnyEars(10.5)
+error: max_recursion_limit exceeded
+error: called from:
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12
+error:   C:\Users\Robin\Desktop\cs177Hw4\bunnyEars.m at line 10, column 12

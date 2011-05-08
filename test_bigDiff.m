@@ -27,6 +27,8 @@ e=e+runtest([23,34,22],12);% test case by Tarif
 e=e+runtest([-25 -50 100],150);% added by seife
 e=e+runtest([ 100/2 900/300],47)% added by seife
 e=e+runtest([12 88 99],87); % added by Tarif
+e=e+runtest([-2 -5 10],15);% by Robin Jha
+e=e+runtest([ 1.5 -1.5],3)% by Robin Jha
 
 end
 

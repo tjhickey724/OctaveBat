@@ -33,6 +33,11 @@ e=e+runtest(0,2,0);
 e=e+runtest(2,1,2);
 e=e+runtest(2,0,1);
 e=e+runtest(2,-2,.25); %added by Ian Reichek
+
+e=e+runtest(0,1,0);% by Robin Jha
+e=e+runtest(1,0,1);% by Robin Jha
+e=e+runtest(-1,1,-1);% by Robin Jha
+
 end
 
 

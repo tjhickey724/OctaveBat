@@ -19,6 +19,9 @@ e+= runTest(9,45);
 e+= runTest(10,55);
 e+= runTest(12,78);
 e+= runTest(20,2100);% by Kai Wu
+e+= runTest(13,91);% by Robin Jha
+e+= runTest(14,105);% by Robin Jha
+
 
 end
 

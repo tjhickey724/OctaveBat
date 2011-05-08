@@ -20,6 +20,9 @@ e= e+runTest([100,1,100,100],1);
 e= e+runTest([1,2,3,4,5],0);
 e= e+runTest([1,2,100,4,5],0);
 
+e= e+runTest([0],0);% by Robin Jha
+e= e+runTest([100,1,100],1);% by Robin Jha
+
 e = e + runTest([0],0);
 
 e= e+runTest([1,100,-100,4,5],0);
