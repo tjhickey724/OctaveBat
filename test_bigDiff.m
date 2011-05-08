@@ -6,12 +6,13 @@
 % sample cases are used for testing the correctness of the function
 % Modified by seife kassahun
 % added two test cases and the function works good
+% Looks great - added one more test file - Abhirup Das
 
 
 function e=test_bigDiff()
 
 e=0;
-
+e = e + runtest( [4 36 32], 28); %test case by Abhirup
 e=e+runtest([5 4 3],2);% test case by Tarif
 e=e+runtest([3],0);% test case by Tarif
 e=e+runtest([6,6,10],4);% test case by Tarif
