@@ -28,6 +28,7 @@ function e=test_sumDouble()
   e = e + runtest(-5,5,0.1);% by Kai Wu
   e = e + runtest(.1, .2, .3); % added by Ian Reichek
   e = e + runtest(.001, .002, .003); %added by Ian Reichek
+  e = e + runtest(-6,-5,-11); %added by Liz Li
   
 end
 
