@@ -11,7 +11,7 @@ e = e + runtest(-1,101,true);
 e = e + runtest(1,101,false);
 e = e + runtest(101,-1,true);
 e = e + runtest(132,212,false);
-e = e + runtest(-63,12,fase); %added by Liz Li
+e = e + runtest(-63,12,false); %added by Liz Li
 
 fprintf('Total Number of errors in test = %d\n',e)
 end
