@@ -26,6 +26,7 @@ function e = test_parrot_trouble()
     e = e + runtest(true, 7, false); % Added by ASR
     e = e + runtest(true, 22, true); % Added this case icrosby
     e = e + runtest (false, 15, false); %Added by Huimin Jia
+	e = e + runtest (true, 20, false); %Added by Liz Li
 end
 
 
