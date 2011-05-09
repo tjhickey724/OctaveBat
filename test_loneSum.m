@@ -5,6 +5,7 @@ function e = test_loneSum()
 %
 % Adam Rosenbloom on 3-1-2011
 % Sara Shahanaghi--added two additional tests
+% Yohanes Santoso - added tests
 
 e = 0;
 e = e + runtest(1, 2, 3, 6);
@@ -19,6 +20,8 @@ e = e + runtest(22, 22, 7, 7);
 e = e + runtest(11, 11, 11, 0);
 e = e + runtest(1, 99, 3, 103);
 e = e + runtest(0, 0, 6, 6);
+e = e + runtest(0, 0, 0, 0);
+e = e + runtest(100, 100, 100, 100)
 
 if e == 0
     fprintf('Tests succesful!')
