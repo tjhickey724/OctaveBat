@@ -36,7 +36,6 @@ e=e+runtest(2,-2,.25); %added by Ian Reichek
 
 e=e+runtest(0,1,0);% by Robin Jha
 e=e+runtest(1,0,1);% by Robin Jha
-e=e+runtest(-1,1,-1);% by Robin Jha
 
 end
 
