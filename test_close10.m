@@ -8,6 +8,7 @@ function test_close10()
 % Added 2 test cases
 % Modified by Huimin Jia: Fixed output error in runTest function for fprintf. '%d' should
 % be '%g'. And add a case.
+% Fixed one test and added another
 
 e=0;
 e=e+ runTest(8,13,8);
@@ -21,7 +22,8 @@ e=e+ runTest(27, -7, 0);
 e=e+ runTest(15.5, 4.5, 0); % close10(a,b) just need input two ints, but it's good to do more than function requirement. Commented by Huimin Jia
 e=e+ runTest(123456,123457,123456) % Test runs fine, added this case icrosby
 e=e+ runTest(15, 15, 0); % Added by Huimin Jia.
-e=e+ runTest(-2, 1, 0); % Added by Ian Reichek
+e=e+ runTest(-2, 1, 1); % Added by Ian Reichek %originally result was 0, but 1 is closer to 10 than -2
+e=e+ runTest(-10, 53, -10); %Added by Liz Li
 
 fprintf('\nErrors: %d\n\n', e);
 
