@@ -24,6 +24,8 @@ y = y + runtest('dAeAl','dAeAl');  % Added by Huimin Jia
 y = y + runtest('de l','de l');  % Added by Huimin Jia
 y = y + runtest('del','');  % Added by Huimin Jia
 y = y + runtest('de','de');  % Added by Huimin Jia
+y = y + runtest('dEl','dEl'); % Added by Liz Li
+y = y + runtest('de1','de1'); % Added by Liz Li note: the characters are d e and one
 end
 
 
