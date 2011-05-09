@@ -28,6 +28,7 @@ y = y + runtest(-2,0,4,false);
 y = y + runtest(12,16,1,true);
 y = y + runtest(13, 12, 20, true); % Added by ASR
 y = y + runtest(12, 20, 12, false); % Added by ASR
+y = y + runtest(-13,-15,5,false); %Added by Liz Li
 
                                                                                                        
 end
