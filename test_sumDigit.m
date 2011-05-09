@@ -6,6 +6,8 @@
 
 %Modified by Ritu Pradhan
 %Added 3 test cases and modified the error statement to display Error message.
+% new test cases added by Tarif Riyad Rahman
+
 
 function e=test_sumDigit()
 
@@ -24,6 +26,8 @@ function e=test_sumDigit()
 	e=e+runtest(1111,4);
 	e=e+runtest(0,0);
 	e=e+runtest(10,1);
+
+	e=e=runtest(121,4); % added by tarif riyad rahman
 
 end
 
