@@ -4,7 +4,7 @@
 
 % This is the test bed for the function commonTwo
 % sample cases are used for testing the correctness of the function
-
+% All test cases added by Tarif Riyad Rahman. New test bed for new test cases
 
 function e=test_scores100()
 

@@ -10,7 +10,7 @@
 % Josh Silverman (good coverage)
 % Antonio Cancio (Added a new test case)
 % Ritu Pradhan(Added 2 new test cases)
-
+% one test case added - Tarif Riyad Rahman
 
 function e=test_powerN()
 
@@ -36,6 +36,8 @@ e=e+runtest(2,-2,.25); %added by Ian Reichek
 
 e=e+runtest(0,1,0);% by Robin Jha
 e=e+runtest(1,0,1);% by Robin Jha
+
+e=e+runtest(2,3,8); % added by Tarif Riyad Rahman
 
 end
 
