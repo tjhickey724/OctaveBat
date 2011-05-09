@@ -19,6 +19,7 @@ function e = test_front3()
     
     e = e + runTest('', ''); %added by Huimin Jia
     e = e + runTest(' a', ' a a a'); %added by Huimin Jia
+	e = e + runTest('finalssss', 'finfinfin'); %added by Liz Li
 	
 	function k = runTest(str,answer)
 		% runTest(str,answer) - checks that front3(str) == answer
