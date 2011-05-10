@@ -6,6 +6,7 @@
 % sample cases are used for testing the correctness of the function
 % test Case added by Abhirup
 % new test case added by tarif riyad rahman 
+# modified by Ben Setel
 
 function e=test_sumDigits()
 
@@ -23,6 +24,7 @@ e=e+runtest('4',4);
 e=e+runtest('45',9);
 e = e + runtest('y1absfn12vzhdjf', 4); % test added by Abhirup Das
 e=e+runtest('12a12bb',6); % test case added by tarif riyad rahman
+e=e+runtest('-13adsf-7', 11); #added by Ben Setel
 
 
 end

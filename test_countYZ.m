@@ -6,6 +6,7 @@
 % sample cases are used for testing the correctness of the function
 % All test cases added by Tarif Riyad Rahman.. New Test Bed for New Solution
 
+#Modified by Ben Setel.  Added test last test.
 
 function e=test_countYZ()
 
@@ -21,6 +22,7 @@ e=e+runtest('harvard university',1);
 e=e+runtest('brandeis university',1);
 e=e+runtest('Kutz',1);
 e=e+runtest('ZZZZZZ',1);
+e=e+runtest('zazzy yzyz', 2); #added
 
 
 end
