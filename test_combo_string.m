@@ -18,7 +18,7 @@ function e=test_combo_string(s)
   e = e+ runtest('hhh','h','hhhhh');
   e = e+ runtest('4989','12','498912');
   e = e+ runtest('good','study','goodgoodstudy');
-
+  e = e+ runtest('HELLO','12','12HELLO12');
 
 end  
  
