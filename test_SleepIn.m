@@ -6,12 +6,15 @@ function e=test_SleepIn()
 % Mehreen Asad checked the test case and it runs fine. 
 % Ian Reichek ran the test case with no errors
 % Liz Li ran the test case with no errors
+% Edited by Sylvie I have run the test and all cases are covered
 
 e=0;
 e= e + runtest(true,true,true);
 e= e + runtest(true,false,false);
 e= e + runtest(false,true,true);
 e= e + runtest(false,false,true);
+
+
 
 end
 
