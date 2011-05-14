@@ -17,6 +17,7 @@ e = e + runtest(18, 22, 18);
 e = e + runtest(22, 22, 0);
 e = e + runtest(11, 11, 11);
 e = e + runtest(-2, -4, -2); %added by Siddhi Krishna
+e = e + runtest(7, 8, 8); % added by Gabriel Bronk
 
 if e == 0
     fprintf('Tests succesful!')
