@@ -24,7 +24,7 @@ e = e + runtest([-4 3], [-3 2], [-4 3]);
 e = e + runtest([-1 -1], [1 1], [1 1]);
 e = e + runtest([-10 1], [9 1], [9 1]);
 e = e + runtest([-5 -6], [-7 -2], [-7 -2]); %testcase added by Siddhi Krishna. 
-
+e = e + runtest([1 2], [9 10], [9 10]); %testcase added by Gabriel Bronk.
 e = e + runtest([-5.2 4.3], [8.8 9.2], [8.8 9.2]); % added by Huimin Jia.
 e = e + runtest([1 2 3 4 5 6], [1 2 3], [1 2 3 4 5 6]); % added by Huimin Jia.
 e = e + runtest([0 0], [0 0 0], [0 0]); % added by Huimin Jia.
