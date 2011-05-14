@@ -11,6 +11,7 @@ function e=test_sumDouble()
 % Ian Reichek - added some decimal tests
 % Gabriel Bronk added a test and completely removed the decimal tests 
 % since the function is not supposed to have decimal inputs.
+%Tested by Sylvie and added two test in case the int are os and in case one of them is zero
 
   e=0;
   
@@ -33,6 +34,8 @@ function e=test_sumDouble()
   e = e + runtest(-1, -1, -4); %added by Ian Reichek  % changed by Gabriel Bronk
   e = e + runtest(-6,-5,-11); %added by Liz Li
   e = e + runtest(100,200,300); %added by Gabriel Bronk
+  e = e + runtest(0,4,4);%added by Sylvie
+  e=e+runtest(0,0,0)%added by Sylvie
 
 end
 
