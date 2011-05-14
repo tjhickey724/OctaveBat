@@ -9,6 +9,7 @@ function test_sortaSum()
 % Tested by Adam Rosenbloom on 5-2-11
 %   Everything looked good, added tab before total numbers of failures, 
 %   and also added two test cases.
+% A test added by Gabriel Bronk
 
 %Modified by Ritu Pradhan
 % Added 2 test cases and modified the statement so that errors displays properly.
@@ -31,6 +32,7 @@ e = e + runtest(-20, 5, -15); % Added by ASR
 
 e = e + runtest(0,0,0);
 e = e + runtest(-3,-3,-6);
+e = e + runtest(-7,-11,-18); % Added by Gabriel Bronk
 
 fprintf('Failures: %d\n', e);
 

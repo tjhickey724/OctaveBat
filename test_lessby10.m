@@ -11,6 +11,7 @@ e=e+runtest(200,209,190,1)
 e=e+runtest(-1,8,-11,1)
 e=e+runtest(3,3,3,0)
 e=e+runtest(1,9,56,1)
+e=e+runtest(10,19,28,1) % added by Gabriel Bronk
 
 fprintf ('Failures: %d\n',e) %added 
 

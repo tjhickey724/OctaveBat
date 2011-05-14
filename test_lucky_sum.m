@@ -20,9 +20,10 @@ test_function(0,189,13, 189)
 test_function(0,13,5, 0)
 test_function(-1900,13,5, -1900)
 
-test_function(13, 13, 3 , 3)% by Robin Jha
+test_function(13, 13, 3 , 0)% by Robin Jha % edited by Gabriel Bronk
 test_function(1, 2, 13, 3)% by Robin Jha
 test_function(-1, 4, 13, 3)% by Robin Jha
+test_function(-1, -13, 13, -14)% by Gabriel Bronk
 
 if error == 0
     fprintf('The function works!\n')

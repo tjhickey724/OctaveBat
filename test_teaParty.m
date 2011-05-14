@@ -24,6 +24,7 @@ err = err + runTestParty(0, -100, 0);
 err = err + runTestParty(11, 4, 0);
 err = err + runTestParty(-4, 8, 0); %added by Siddhi Krishna
 err = err + runTestParty(36, 6, 2); %added by Huimin Jia
+err = err + runTestParty(3, 6, 0); %added by Gabriel Bronk
 
 end
 

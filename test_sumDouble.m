@@ -9,6 +9,8 @@ function e=test_sumDouble()
 % Everything looks good! Added two test cases.
 % add two tests for this function by Kai Wu
 % Ian Reichek - added some decimal tests
+% Gabriel Bronk added a test and completely removed the decimal tests 
+% since the function is not supposed to have decimal inputs.
 
   e=0;
   
@@ -27,8 +29,8 @@ function e=test_sumDouble()
   e = e + runtest(0, 0, 0); % Added by ASR
   e = e + runtest(888,666,1554);% by Kai Wu
   e = e + runtest(-5,5,0);% by Kai Wu %output was originally 0.1
-  e = e + runtest(.1, .2, .3); % added by Ian Reichek
-  e = e + runtest(.001, .002, .003); %added by Ian Reichek
+  e = e + runtest(1, 2, 3); % added by Ian Reichek % changed by Gabriel Bronk
+  e = e + runtest(-1, -1, -4); %added by Ian Reichek  % changed by Gabriel Bronk
   e = e + runtest(-6,-5,-11); %added by Liz Li
   e = e + runtest(100,200,300); %added by Gabriel Bronk
 
