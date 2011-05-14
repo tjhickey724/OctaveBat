@@ -4,7 +4,9 @@ function e=test_combo_string(s)
 % also prints out info about tests
 % author: Huimin Jia 
 % add two tests for this function by Kai Wu
-
+% another test added by Gabriel Bronk
+% the 'good study' test was modified by Gabriel Bronk
+% the "4989 12" test was modified by Gabriel Bronk
 
   e=0;
   e = e+ runtest('a','bb','abba');
@@ -16,9 +18,15 @@ function e=test_combo_string(s)
   e = e+ runtest('','','error');
   e = e+ runtest('45','2','2452');
   e = e+ runtest('hhh','h','hhhhh');
+<<<<<<< HEAD
+  e = e+ runtest('4989','12','12498912');
+  e = e+ runtest('good','study','goodstudygood');
+  e = e+ runtest('22hh','7g8j9k','22hh7g8j9k22hh');
+=======
   e = e+ runtest('4989','12','498912');
   e = e+ runtest('good','study','goodgoodstudy');
   e = e+ runtest('HELLO','12','12HELLO12');
+>>>>>>> 966be1c5031e93b7373ec4dfa0f7a6abdf1751d7
 
 end  
  
