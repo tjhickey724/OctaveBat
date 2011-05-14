@@ -18,6 +18,7 @@ function test_array_front9()
     e = e + runtest ([9, 5], true);
     e = e + runtest ([6, 2, 7, 3], false);
     e = e + runtest ([9999, 999, 99, 9], true);	
+    e = e + runtest ([99999, 9999, 999, 99], false);	% by Gabriel Bronk
 	e=e+runtest([-9 10 12 15],false);
 	e=e+runtest([18/2 27/3],true);
 	end;
