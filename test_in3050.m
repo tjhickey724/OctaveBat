@@ -5,6 +5,7 @@ function e = test_in3050()
 % Date 2/28/11
 % Mehreen Asad (Changed test cases to show correct result, Added 3 test cases)
 % Liz Li (added a test case)
+% added case by Sylvie
 
 e=0;
 e= e + runtest(20,40,false);
@@ -18,8 +19,11 @@ e= e + runtest(45,32,false); % this was originally true but should be false
 e= e + runtest(30,50, false);% this was originally true but should be false
 e= e + runtest(30,41,false);% Added this test case
 e= e + runtest(43,45,true);% Added this test case
-e= e + runtest(37,38,true);% Added this test case
-e= e + runtest(30,40,true);% Added by Liz Li
+e= e + runtest(37,38,true);% Added this test case  
+e= e + runtest(30,40,true);% Added by Liz Li 
+e= e + runtest(31,40,true) ;%added by Sylvie
+e= e + runtest(20,50,false);%added by Sylvie 
+
 
 
 
