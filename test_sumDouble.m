@@ -30,7 +30,8 @@ function e=test_sumDouble()
   e = e + runtest(.1, .2, .3); % added by Ian Reichek
   e = e + runtest(.001, .002, .003); %added by Ian Reichek
   e = e + runtest(-6,-5,-11); %added by Liz Li
-  
+  e = e + runtest(100,200,300); %added by Gabriel Bronk
+
 end
 
 function e = runtest(a,b,answer)
