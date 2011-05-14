@@ -3,6 +3,7 @@ function e=test_neighbor23()
 % and returns the number of tests that fail
 % author: Livia Bell
 % date: March 1, 2011
+% changed added by Sylvie ,I added a test
 
 
   e=0;
@@ -16,6 +17,7 @@ function e=test_neighbor23()
   e = e + runtest(15,5,15);
   e = e + runtest(40,3,40);
   e = e + runtest(10,28,28);
+  e = e + runtest(0,10,10);added by Sylvie
 
 end
 
