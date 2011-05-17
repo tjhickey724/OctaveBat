@@ -26,8 +26,7 @@ function e=runtest(fFart,pFart,answer)
     fprintf('     babyPoop(%d,%d)=%s !!!\n',fFart,pFart,result);
   else
     e=1;
-    fprintf('ERROR:babyPoop(%d,%d)->%s<>%s !!!\n',
-  	  fFart,pFart,result,answer);
+    fprintf('ERROR:babyPoop(%d,%d)->%s<>%s !!!\n',fFart,pFart,result,answer);
   end
 end
 
