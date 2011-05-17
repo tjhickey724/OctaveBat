@@ -17,7 +17,7 @@ function e=test_neighbor23()
   e = e + runtest(15,5,15);
   e = e + runtest(40,3,40);
   e = e + runtest(10,28,28);
-  e = e + runtest(0,10,10);added by Sylvie
+  e = e + runtest(0,10,10); %added by Sylvie
 
 end
 

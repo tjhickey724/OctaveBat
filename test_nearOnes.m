@@ -15,9 +15,9 @@ function e=test_nearOnes()
   e = e + runtest(1234,false);
   e = e + runtest(500,false);
   e = e + runtest(108,true);
-	e= e + runtest(10101, false); %added this case icrosby
-	e= e + runtest(76,false);edited by sylvie
-	e= e + runtest(100,true);edited by sylvie
+  e= e + runtest(10101, false); %added this case icrosby
+  e= e + runtest(76,false); %edited by sylvie
+  e= e + runtest(100,true);%edited by sylvie
 end
 
 function e=runtest(a,answer)

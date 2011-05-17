@@ -41,9 +41,9 @@ function e = runtest (a, b, answer)
     result = parrot_trouble(a, b);
     if (result == answer)
        e = 0;
-       fprintf('       parrot_trouble(%d, %d) = %d\n', a , b, result);
+       printf('       parrot_trouble(%d, %d) = %d\n', a , b, result);
     else
        e = 1;
-       fprintf('ERROR: parrot_trouble(%d, %d)->%d <> %d\n', a, b, result, answer);
+       printf('ERROR: parrot_trouble(%d, %d)->%d <> %d\n', a, b, result, answer);
     end;
 end
