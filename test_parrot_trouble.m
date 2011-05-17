@@ -22,13 +22,13 @@ function e = test_parrot_trouble()
     e = e + runtest (true, 12, false);
     e = e + runtest (false, 7, false); % Case 7 - expected output to false
     e = e + runtest (true, 1, true);
-    e = e + runtest (false, 22, true); % Case 9 - expected output to false-edited by sylvie before it was false but it suppose to be true
+    e = e + runtest (false, 22, false); % Case 9 - expected output to false-edited by sylvie before it was false but it suppose to be true
     e = e + runtest (true, 11, false);
     e = e + runtest(true, 7, false); % Added by ASR
     e = e + runtest(true, 22, true); % Added this case icrosby
     e = e + runtest (false, 15, false); %Added by Huimin Jia
 	e = e + runtest (true, 20, false); %Added by Liz Li
-	e= e+runtest(true,5,true)
+	e= e+runtest(true,5,true);%edited by sylvie
 end
 
 

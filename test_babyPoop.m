@@ -3,6 +3,7 @@ function e=test_babyPoop()
 % and returns the number of tests that fail
 % author: Livia Bell
 % date: March 1, 2011
+% edited by sylvie
 
 
   e=0;

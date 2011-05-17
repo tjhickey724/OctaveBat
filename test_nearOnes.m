@@ -4,6 +4,7 @@ function e=test_nearOnes()
 % author: Livia Bell
 % date: March 1, 2011
 % Iain Crosby fixed two mistakes and added one case
+%edited by Sylvie
 
   e=0;
   e = e + runtest(75,false);
@@ -14,7 +15,9 @@ function e=test_nearOnes()
   e = e + runtest(1234,false);
   e = e + runtest(500,false);
   e = e + runtest(108,true);
-e= e + runtest(10101, false); %added this case icrosby
+	e= e + runtest(10101, false); %added this case icrosby
+	e= e + runtest(76,false);edited by sylvie
+	e= e + runtest(100,true);edited by sylvie
 end
 
 function e=runtest(a,answer)
@@ -22,7 +25,6 @@ function e=runtest(a,answer)
 % to get the result, compares with the answer and
 % returns the 1 if an error 0 if not 
 % also prints out the test results...
-
   result = nearOnes(a);
   
   if (result == answer)
